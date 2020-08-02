@@ -76,6 +76,7 @@ body{
     z-index: 1;
 }
 
+/*
 .dropdown-divider {
     border-style: none;
     border-top-style: dashed;
@@ -84,8 +85,18 @@ body{
     width: 100%;
     text-align: center;
 }
+*/
+
+a{
+    color: #fff;
+}
+
+a:hover{
+    color: #fff;
+}
 
 button a{
+
     text-decoration: none;
     text-decoration-line: none;
     color: #fff ;
@@ -98,54 +109,89 @@ button a:hover{
 }
 
 button{
-    background-color: #b5838d;
+/*
+    background-color: #388A78;
     color: white;
     font-size: 18px;
-/*    border-style: inset;*/
+    border-style: inset;
     border-radius: 10px;
     height: 30px;
     width: 120px;
-    border-color: #b5838d;
+    border-color: #388A78;
     padding-right: 10px;
+*/
     
+    line-height: 1;
+  text-align: center;
+  background: #388A78;
+  border-radius: 10px;
+  color: #fff;
+    height: 30px;
+    width: 120px;
+  padding: 0.33rem 0.5rem;
+  text-decoration: none;
 }
 
 button:hover{
-    background-color: #ffb4a2;
-    border-color: #ffb4a2;
+    background-color: #388A78;
+    border-color: #388A78;
 }
 
 
 .action{
-    background-color: #b5838d;
+    background-color: #659DA3;
     color: white;
     font-size: 18px;
     border-bottom-style: inset;
     border-radius: 20px;
     height: 30px;
     width: 120px;
-    border-color: #b5838d;
+    border-color: #659DA3;
 }
 
-
-.pink{
-    background-color: #FFDDD2;
-    margin: auto;
-    width: 100%;
+h1{
+    text-align: center;
+    color: ;
+}
+.one{
+    background-color: #659DA3;
+    color: #fff;
 }
 
-.white{
-    background-color: white;
+.two{
+    background-image: linear-gradient(to right, #388A78 , #3A92A1);
+    color: #fff;
 }
 
-img:hover{
-    background-color: #ffcdb2;
+.three{
+    background-color:  #3A92A1;
+    color: #fff;
 }
 
-.portfolio-preview{
-    background-color: #b5838d;
-    height: 300px;
-    width: 300px;
+.four{
+    background-color:  #388A78;
+}
+
+.intro{
+    text-align: center;
+}
+
+carousel-inner{
+   
+}
+
+video{
+     width: 100%    !important;
+  height: auto   !important;
+}
+
+.preview{
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.preview img{
+    height: 300px; width: 500px;
 }
 
 .placeholder{
@@ -154,10 +200,18 @@ img:hover{
     height: 800px;
     width: 1000px;
     background-color: #FFDDD2;
-/*
-    text-align: center;
-    */
 }
+
+/*SCROLLING HORIZONTAL*/
+.scrolling-wrapper {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+ .scrolling-wrapper .card {
+    display: inline-block;
+  }
+/*SCROLLING HORIZONTAL*/
 
 
 .centered{
@@ -167,17 +221,6 @@ img:hover{
     text-align: center;
 }
 
-
-
-.purple{
-   background-color: #6d6875; 
-}
-
-.row{
-    padding: 0rem rem 3rem;
-    margin: 0 auto 0 auto;
-   
-}
 
 /*
 .image{
@@ -197,6 +240,55 @@ img:hover{
 }
 
 
+/*OVERLAY*/
+.overlayContainer {
+  position: relative;
+  width: 50%;
+}
+
+.overlayImage {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #388A78;
+}
+
+.overlayContainer:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.text a{
+    color: white;
+}
+
+.text a:hover{
+    color: white;
+    text-decoration: none;
+}
 
 /*FLOATING MENU*/
 
@@ -243,7 +335,7 @@ label {
 [data-opens-menu], [role="menu"] a {
   line-height: 1;
   text-align: center;
-  background: #b5838d;
+  background: #388A78;
   border-radius: 10px;
   color: #fff;
     height: 30px;
@@ -253,15 +345,15 @@ label {
 }
 
 [data-opens-menu], [role="menu"] a:hover{
-    background-color: #ffb4a2;
-    border-color: #ffb4a2;
+    background-color: #388A78;
+    border-color: #388A78;
     color: white;
     text-decoration: none;
 }
 
 [type="checkbox"]:focus + [data-opens-menu], [role="menu"] a:focus {
   outline: none;
-  background: #ffb4a2;
+  background: #388A78;
 }
 
 :checked + label .expanded-text {
