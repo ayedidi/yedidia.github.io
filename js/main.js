@@ -37,7 +37,7 @@ $(".animator").click(function() {
 $(".message").click(typeWriter);
 
 var i = 0;
-var txt = 'Hi, I\'m Yedidia (pronounced yeh-deed-yaa), a 3D animator and iOS app developer. '; 
+var txt = 'Hi, I\'m Yedidia (yeh-deed-yaa), a 3D animator and iOS app developer. '; 
 const words = [
     "Hi! I\'m Yedidia, a 3D animator and developer.", 
     "I like to bring things to life. I make iOS Apps, websites, and animations.", 

@@ -5,15 +5,19 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <link href="Montserrat/Montserrat-Thin.ttf" rel="stylesheet">
+   
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="favicon.ico">
+    
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <title>Yedidia</title>
-    
-    <div data-menu-component>
- <input type="checkbox" role="button" aria-haspopup="true" id="toggle" class="vh">
+
+    <div data-menu-component >
+ <input type="checkbox" role="button" aria-haspopup="true" id="toggle" class="vh rounded-circle">
   <label for="toggle" data-opens-menu>
     &#x2630;
     
@@ -25,20 +29,17 @@
       <li><a href="work.html">Work</a></li>
       <li><a href="projects.html">Projects</a></li>
       <li><a href="https://instagram.com/yedidia3d?igshid=tmbkxnnzuvmi">Instagram</a></li>
-      <li>
-          <button type="button"  data-toggle="modal" data-target="#exampleModal">Contact
-
-</button>
-      </li>
 
     </ul>
   </div>
 
 </div> 
+      
      
-<button type="button" class="rounded-pill" data-toggle="modal" data-target="#exampleModal">Contact
+<button type="button" class="rounded-pill" data-toggle="modal" data-target="#exampleModal" >Contact
 
 </button> 
+ 
 <!--        JAVASCRIPT THAT CHECKS IF JAVASCRIPT IS ENABLED-->
 </head>
 
@@ -50,19 +51,20 @@
 <body>
 
 <!--HIGHLIGHTS START HERE-->
-<div class="intro two">
-   <br><br><br>
-    <h1>Yedidia Hubbard</h1> <br>
-</div>
 
-<div class = "container-fluid two"> 
+
+<div class = "container-fluid" style="text-align: center;"> 
+ 
+ <br><br><br>
+    <h1>Yedidia Hubbard</h1> <br>
   
- <div style="text-align: center">
+ <div >
+<!--      <h2> I'm a </h2>-->
        <div class="btn-group btn-group-toggle" data-toggle="buttons">
-  <label class="animator btn btn-outline-light active">
+  <label class="animator btn btn-outline-dark active">
     <input type="radio" name="options" id="option1" checked> Animator
   </label>
-  <label class="developer btn btn-outline-light">
+  <label class="developer btn btn-outline-dark">
     <input type="radio" name="options" id="option2"> Software Developer
   </label>
 </div> <br><br>
@@ -70,13 +72,15 @@
      
 
     
-  <div class="anim" style="text-align: center;"> 
-     <video autoplay loop muted src="img/videos/0001-0120%20copy%202.mp4" style=" height: 600px; width: 800px;"></video>
+  <div class="anim" style="text-align: center;position: absolute; top: 0; width: 100%; height: auto; z-index: -1;">
+    <video autoplay loop muted id="video" style="width: 300px; height:500px;" src="img/videos/0001-0120%20copy%202.mp4">
+       
+    </video>
 
   </div>  
           
     <div class = "devs" style="text-align: center;"> 
-        <div class="centered" style="height: auto; width: auto;">
+        <div class="centered" style="height: 400px; width: auto;">
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -85,10 +89,10 @@
   </ol>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <a href=""><img class = "img-fluid" src="img/iphoneImage%20copy.jpg" class="d-block w-100" alt="Elladia Game"></a>
+      <a href=""><img style="height: 400px; width: 600px;" class = "img-fluid" src="img/iphoneImage%20copy.jpg" class="d-block w-100" alt="Elladia Game"></a>
     </div>
     <div class="carousel-item">
-      <a href=""><img class = "img-fluid" src="img/iphoneImage%20copy.jpg" class="d-block w-100" alt="Elladia Social"></a>
+      <a href=""><img style="height: 400px; width: 600px;" class = "img-fluid" src="img/iphoneImage%20copy.jpg" class="d-block w-100" alt="Elladia Social"></a>
     </div>
 <!--
     <div class="carousel-item">
@@ -109,12 +113,13 @@
    
     </div>
   </div> 
-  <br>
+  <br><br><br><br><br><br>
 <!--  HIGHLIGHTS END HERE-->
 
 
-<div>
-<h1>Services</h1>
+<div style="">
+
+<!--<h1>Services</h1>-->
 
 <!--/*SCROLLING HORIZONTAL*/-->
 <!--
@@ -145,6 +150,7 @@
 </div>
 -->
 <!--/*SCROLLING HORIZONTAL*/-->
+
 
 <div class="container responsive">
   <div class="row">
@@ -177,7 +183,7 @@
    
  
 
-<section class = "about">
+<section class = "about d-none d-sm-block">
 <h1>About Me</h1>
 <div class="responsive under container-fluid">
     <video style="height: 789px;"  autoplay loop muted src="img/videos/0001-0120.mp4"></video>
@@ -326,10 +332,10 @@
 </div>  
          <!--CONTACT-->
 
-    
+ <br><br><br>   
 
 <footer>
-    <h5>Yedidia 2020</h5>
+    <h6>Yedidia 2020</h6>
 </footer>
 <!--
 // Small devices (landscape phones, 576px and up)
