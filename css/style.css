@@ -1,7 +1,6 @@
 html {
   font-size: 120%;
   font-family: 'Montserrat', sans-serif;
-
 }
 
 body{
@@ -12,6 +11,7 @@ body{
 }
 
 
+/*
 .blink {
   animation: blinker 1.2s linear infinite;
 }
@@ -21,6 +21,7 @@ body{
     opacity: 0;
   }
 }
+*/
 
 @include media-breakpoint-up(xs) { ... }
 @include media-breakpoint-up(sm) { ... }
@@ -49,23 +50,8 @@ body{
 
 .about{
     background-image: url(img/flowBack1400.png);
-/*
-    z-index: 10;
-    height: 1000px;
-*/
     width: 100%;
 }
-
-
-.navbar {
-    background-color: #c9ada7;
-}
-
-.navbar-custom .nav-item.active .nav-link,
-.navbar-custom .nav-item:hover .nav-link{
-    color: white;
-}
-
 
 .under{
     position: absolute;
@@ -79,6 +65,20 @@ body{
 */
     z-index: 1;
 }
+
+
+/*
+.navbar {
+    background-color: #c9ada7;
+}
+
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:hover .nav-link{
+    color: white;
+}
+*/
+
+
 
 /*
 .dropdown-divider {
@@ -106,7 +106,7 @@ button{
     font-size: 18px;
     border-color: #388A78;
     padding-right: 10px;
-    border-style: dashed;
+    border-style: double;
 /*    line-height: 1;*/
   text-align: center;
   color: #fff;
@@ -121,6 +121,7 @@ button:hover{
 }
 
 
+/*
 .action{
     background-color: #659DA3;
     color: white;
@@ -131,10 +132,16 @@ button:hover{
     width: 120px;
     border-color: #659DA3;
 }
+*/
 
 h1{
     text-align: center;
     color: ;
+}
+
+h2{
+   text-align: center;
+    color: #3A92A1; 
 }
 
 .one{
@@ -156,17 +163,12 @@ h1{
     background-color:  #388A78;
 }
 
-.intro{
-    text-align: center;
-}
-
-carousel-inner{
-   
-}
 
 video{
      width: 100%    !important;
   height: auto   !important;
+    text-align: center;
+    
 }
 
 .preview{
@@ -196,14 +198,6 @@ video{
     display: inline-block;
   }
 /*SCROLLING HORIZONTAL*/
-
-
-.centered{
-    margin: 10px auto 20px;
-    width: 50%;
-    text-align: center;
-    text-align: center;
-}
 
 
 /*
@@ -245,6 +239,7 @@ video{
   height: 100%;
   width: 100%;
   opacity: 0;
+    border-radius: 5px;
   transition: .5s ease;
 /*  background-color: #388A78;*/
     background-image: linear-gradient(to right, #388A78 , #3A92A1);
