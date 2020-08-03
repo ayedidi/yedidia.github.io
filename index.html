@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-   <link href="Montserrat/Montserrat-Thin.ttf" rel="stylesheet">
+   
    
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="favicon.ico">
@@ -15,8 +15,10 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <title>Yedidia</title>
-
-    <div data-menu-component style = "align-content: center;">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+   <!-- Image and text -->
+<nav class="navbar navbar-light">
+      <div data-menu-component style = "inline-block;" class="">
  <input type="checkbox" role="button" aria-haspopup="true" id="toggle" class="vh rounded-circle">
   <label for="toggle" data-opens-menu>
     &#x2630;
@@ -26,8 +28,8 @@
   </label>
   <div role="menu" data-menu-origin="right">
     <ul>
-      <li><a href="work.html">Work</a></li>
-      <li><a href="projects.html">Projects</a></li>
+      <li><a href="#work">Animation</a></li>
+      <li><a href="projects.html">Code</a></li>
       <li><a href="https://instagram.com/yedidia3d?igshid=tmbkxnnzuvmi">Instagram</a></li>
 
    <li>
@@ -39,6 +41,12 @@
   </div>
 
 </div> 
+
+<p style = "display: inline-block;">Yedidia Hubbard</p>
+
+</nav>
+   
+
       
      
 
@@ -57,17 +65,17 @@
 
 
 <div class = "container-fluid" style="text-align: center;"> 
+<br><br><br>
+<!-- <br><br><br> <br><br><br><br><br><br><br><br>-->
+<!--    <h1>Yedidia Hubbard</h1> <br>-->
 
- <br><br><br>
-    <h1>Yedidia Hubbard</h1> <br>
-  
- <div >
+ <div>
 <!--      <h2> I'm a </h2>-->
        <div class="btn-group btn-group-toggle" data-toggle="buttons">
-  <label class="animator btn btn-outline-dark active">
+  <label class="animator btn btn-outline-light active">
     <input type="radio" name="options" id="option1" checked> Animator
   </label>
-  <label class="developer btn btn-outline-dark">
+  <label class="developer btn btn-outline-light">
     <input type="radio" name="options" id="option2"> Software Developer
   </label>
 </div> <br><br>
@@ -81,9 +89,10 @@
     </video>
 
   </div>  
-          
+<!--          style="height: 400px; width: 600px;"-->
     <div class = "devs" style="text-align: center;"> 
-        <div class="centered" style="height: 400px; width: auto;">
+        <div class="centered" style="height: auto; width: 100%; position: absolute; top: 60px; z-index: -1;">
+        
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -92,13 +101,13 @@
   </ol>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <a href=""><img style="height: 400px; width: 600px;" class = "img-fluid" src="img/Esteria.jpg" class="d-block w-100" alt="Elladia Game"></a>
+      <a href=""><img  class = "img-fluid" src="img/Esteria.jpg" class="d-block w-100" alt="Elladia Game"></a>
     </div>
     <div class="carousel-item">
-      <a href=""><img style="height: 400px; width: 600px;" class = "img-fluid" src="img/Elladia%20Tarot.jpg" class="d-block w-100" alt="Elladia Social"></a>
+      <a href=""><img  class = "img-fluid" src="img/Elladia%20Tarot.jpg" class="d-block w-100" alt="Elladia Social"></a>
     </div>
     <div class="carousel-item">
-      <a href=""><img style="height: 400px; width: 600px;" class = "img-fluid" src="img/Elladia%20Chat.jpg" class="d-block w-100" alt="..."></a>
+      <a href=""><img  class = "img-fluid" src="img/Elladia%20Chat.jpg" class="d-block w-100" alt="..."></a>
     </div>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -121,54 +130,22 @@
 <div style="">
 
 <h2>Services</h2>
-
-<!--/*SCROLLING HORIZONTAL*/-->
-<!--
-<div class="scrolling-wrapper">
-  <div class="card"> <div class="col-sm col-md preview overlayContainer">
-      <a href=""><img class = "overlayImage img-fluid" src="img/flowBack.png" alt=""></a>
-        <div class="overlay">
-    <div class="text"><a href="">Music Videos</a></div>
-  </div>
-    </div></div>
-  <div class="card"><div class="col-sm col-md preview overlayContainer">
-     <a href=""><img class = "overlayImage img-fluid" src="img/iphoneImage%20copy.jpg" alt="">
-      </a>
-              <div class="overlay">
-    <div class="text">Animation</div>
-  </div>
-    </div></div>
-  <div class="card"><div class="col-sm col-md preview overlayContainer">
-     <a href=""><img class = "overlayImage img-fluid" src="img/iphoneImage%20copy.jpg" alt=""></a>
-             <div class="overlay">
-    <div class="text">3D Game Design</div>
-  </div>
-    </div></div>
-  <div class="card"><h2>Card</h2></div>
-  <div class="card"><h2>Card</h2></div>
-  <div class="card"><h2>Card</h2></div>
-  <div class="card"><h2>Card</h2></div>
-</div>
--->
-<!--/*SCROLLING HORIZONTAL*/-->
-
-
-<div class="container responsive">
+<div class="container-fluid responsive">
   <div class="row">
-    <div class="col-sm col-md preview overlayContainer">
+    <div class="col-lg-4 col-md-6 preview overlayContainer">
       <a href=""><img class = "overlayImage img-fluid rounded" src="img/flowBack.png" alt=""></a>
         <div class="overlay">
     <div class="text"><a href="">Music Videos</a></div>
   </div>
     </div>
-    <div class="col-sm col-md preview overlayContainer">
+    <div class="col-lg-4 col-md-6 preview overlayContainer">
      <a href=""><img class = "overlayImage img-fluid rounded" src="img/0001%20copy.png" alt="">
       </a>
               <div class="overlay">
-    <div class="text"><a href="">Animation</a></div>
+    <div class="text"><a href="#work">Animation</a></div>
   </div>
     </div>
-    <div class="col-sm col-md preview overlayContainer">
+    <div class="col-lg-4 col-md-6 preview overlayContainer">
      <a href=""><img class = "overlayImage img-fluid rounded" src="img/Esteria.jpg" alt=""></a>
              <div class="overlay">
     <div class="text"><a href="">iOS Apps</a></div>
@@ -179,9 +156,41 @@
 </div>
 <br><br><br> 
   
-   
-   
-   
+  <div id="work" class="offset">
+   <h2 >Animation</h2>
+       <div class = "container-fluid">
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-4 col-md-6"><video loop muted class = "" src="img/videos/fuzzies.mp4" a href="portfolio.html"></video></div>
+    <div class="col-lg-4 col-md-6"><video loop muted class = "" src="img/videos/2fairy18.mp4" a href="portfolio.html"></video></div>
+    <div class="col-lg-4 col-md-6"><video loop muted class = "" src="img/videos/2fairy18.mp4" a href="portfolio.html"></video></div>
+    </div>
+    <div class="row">
+    <div class="col-lg-4 col-md-6"><img  class = ""></div>
+    <div class="col-lg-4 col-md-6"><video loop muted class = "" src="img/videos/glow.mp4" a href="portfolio.html"></video></div>
+    <div class="col-lg-4 col-md-6"><img  class = ""></div>
+    </div>
+    <div class="row">
+    <div class="col-lg-4 col-md-6"><video loop muted class = "" src="img/videos/snake.mp4" a href="portfolio.html"></video></div>
+    <div class="col-lg-4 col-md-6"><img  class = ""></div>
+    <div class="col-lg-4 col-md-6"><img  class = ""></div>
+<!--
+    <div class="col"><img  class = "portfolio-preview video"> </img></div>
+    <div class="col"><video loop muted class = "portfolio-preview video" src="img/videos/0001-0120%20copy%202.mp4" a href="portfolio.html"></video></div>
+    <div class="col"><img  class = "portfolio-preview"> </img></div>
+-->
+  </div>
+</div>
+    
+    
+    
+    
+    
+<!--   add autoplay to video-->
+<!--autoplay when hovered over-->
+
+</div>
+  </div> 
  
 
 <section class = "about d-none d-sm-block">
@@ -194,13 +203,13 @@
    
   <div class="about row over container-fluid" >
 
-   <div class="col col-sm container-fluid">
+   <div class="col col-md-6 container-fluid">
 <!--      <h1>About Me</h1>-->
        <video autoplay loop muted src="" style=" height: 400px; width: 400px;"></video>
    </div>
     
 <!--    Why I do what I do and facts about me: styled like with a little avatar me emoting at different presses of the chat button or a different animated element matching the fact.-->
-    <div class="chat col-md-4 col-sm-4 container-fluid" style="padding: 10px; background-color: white;">
+    <div class="chat col-md-6 container-fluid" style="padding: 10px; background-color: white;">
     <div class="message">
     
     <p class="button action chatMe" style="text-align: center;"> 
@@ -331,7 +340,7 @@
  <br><br><br>   
 
 <footer>
-    <h6>Yedidia 2020</h6>
+    <h6>Made by Yedidia 2020</h6>
 </footer>
 <!--
 // Small devices (landscape phones, 576px and up)
