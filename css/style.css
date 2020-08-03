@@ -246,7 +246,8 @@ video{
   width: 100%;
   opacity: 0;
   transition: .5s ease;
-  background-color: #388A78;
+/*  background-color: #388A78;*/
+    background-image: linear-gradient(to right, #388A78 , #3A92A1);
 }
 
 .overlayContainer:hover .overlay {
