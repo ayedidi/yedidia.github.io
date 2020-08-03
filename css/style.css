@@ -54,19 +54,30 @@ body{
     z-index: 1;
 }
 
+.container-fluid{
+    padding: 0 0% 10%;
+    margin: 0;
+}
 
-/*
+.container{
+    padding: 3% 15%;
+}
+
 .navbar {
-    background-color: #c9ada7;
+/*    background-color: #c9ada7;*/
+    padding-bottom: 10px;
 }
 
 .navbar-custom .nav-item.active .nav-link,
 .navbar-custom .nav-item:hover .nav-link{
     color: white;
 }
-*/
 
-
+.btn-group-toggle{
+    font-family: sans-serif;
+    
+    
+}
 
 /*
 .dropdown-divider {
