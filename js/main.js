@@ -2,15 +2,15 @@
 //onload methods to start up things
 
 
-
-$(".devs").hide();
-$("#journey").hide();
-
-
-$(".journey").click(function() {
-    $("#journey").show();
-//    $(".journey").hide();
-});
+//
+//$(".devs").hide();
+//$("#journey").hide();
+//
+//
+//$(".journey").click(function() {
+//    $("#journey").show();
+////    $(".journey").hide();
+//});
 
 //$(".video").on("mouseover", function() {
 //    play;
