@@ -257,6 +257,10 @@ video{
     text-decoration: none;
 }
 
+.services{
+    padding: 3%;
+}
+
 /*FLOATING MENU*/
 
 * {
