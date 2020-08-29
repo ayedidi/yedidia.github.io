@@ -33,24 +33,57 @@ $(".animator").click(function() {
     
 });
 
+$(".self").click(function() {
+    $(".relSelf").show();
+    $(".relOthers").hide();
+    $(".forGrief").hide();
+    $(".idSex").hide();
+    console.log("ooo");
+    
+});
 
-$(".message").click(typeWriter);
+$(".others").click(function() {
+    $(".relSelf").hide();
+    $(".relOthers").show();
+    $(".forGrief").hide();
+    $(".idSex").hide();
+    
+});
 
-var i = 0;
-var txt = 'Hi, I\'m Yedidia (yeh-deed-yaa), an animator and software developer. I specialize in music videos and iOS apps.'; 
-const words = [
-    "Hi! I\'m Yedidia, an animator and developer available for freelance work.", 
-    "I like to bring things to life. I make iOS Apps, websites, and animations.", 
-    "Scroll down to see my work. Let\'s create something together!"];
-var speed = 20; /* The speed/duration of the effect in milliseconds */
+$(".grief").click(function() {
+    $(".relSelf").hide();
+    $(".relOthers").hide();
+    $(".forGrief").show();
+    $(".idSex").hide();
+    
+});
 
-function typeWriter() {
-  if (i < txt.length) {
-    document.querySelector(".message").innerHTML += txt.charAt(i);
-    i++;
-    setTimeout(typeWriter, speed);
-  }
-}
+$(".sex").click(function() {
+    $(".relSelf").hide();
+    $(".relOthers").hide();
+    $(".forGrief").hide();
+    $(".idSex").show();
+    
+});
+
+
+//$(".message").click(typeWriter);
+//
+//var i = 0;
+//var txt = 'Hi, I\'m Yedidia (yeh-deed-yaa), an animator and software developer. I specialize in music videos and iOS apps.'; 
+//const words = [
+//    "Hi! I\'m Yedidia, an animator and developer available for freelance work.", 
+//    "I like to bring things to life. I make iOS Apps, websites, and animations.", 
+//    "Scroll down to see my work. Let\'s create something together!"];
+//var speed = 20; /* The speed/duration of the effect in milliseconds */
+//
+//function typeWriter() {
+//  if (i < txt.length) {
+//    document.querySelector(".message").innerHTML += txt.charAt(i);
+//    i++;
+//    setTimeout(typeWriter, speed);
+//  }
+//}
 
 //$(".message").click(typingEffect);
 //

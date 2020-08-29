@@ -14,18 +14,6 @@ body{
 */
 
 
-/*
-.blink {
-  animation: blinker 1.2s linear infinite;
-}
-
-@keyframes blinker {
-  50% {
-    opacity: 0;
-  }
-}
-*/
-
 
 .chat{
     border-color: darkslategrey;
@@ -112,14 +100,13 @@ button{
 /*    line-height: 1;*/
   text-align: center;
   color: #fff;
-    height: 30px;
-    width: 120px;
+  border-radius: 10px;
   text-decoration: none;
 }
 
 button:hover{
-    background-color: #388A78;
-    border-color: #388A78;
+    background-color: black;
+    border-color: black;
 }
 
 
