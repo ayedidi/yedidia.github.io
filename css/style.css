@@ -12,9 +12,11 @@ body{
     
 }
 
+/*
 hr .dashed{
     border-top: 1px dashed red;
 }
+*/
 
 .blogImg{
     height: 300px;
@@ -68,7 +70,7 @@ a:hover{
 .topics button:hover{
     background-color: transparent;
     border-color: transparent;
-    color: black;
+    color: #FAD1AE;
     text-decoration-style: dashed;
 }
 
@@ -108,12 +110,12 @@ a:hover{
 }
 
 .profile a{
-    color: #B1DECA;
+    color: #FAD1AE;
 }
 
 .profile a:hover{
     text-decoration: none;
-    color: #DEF4E2;
+    color: #FCDFA4;
 }
 
 video{

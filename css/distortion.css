@@ -6,56 +6,16 @@
 
 body {
   font-family: 'Poppins';
-  background: black;
+  background: #03010D;
   width: 100%;
   height: 100vh;
   overflow: hidden;
 }
 
 
-/* NAVBAR
-=========================== */
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  height: 80px;
-  align-items: center;
-}
-
-.navbar > div {
-  padding: 0 30px;
-  font-size: 20px;
-}
-
-.navbar .menu {
-  margin-right: auto;
-}
-
-.navbar .lang {
-  font-size: 10px;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-
 
 /* SOCIAL MEDIA
 =========================== */
-/*
-.media ul {
-  position: absolute;
-  bottom: 250px;
-  left: -140px;
-  transform: rotate(-90deg);
-}
-
-.media ul li {
-  font-size: 10px;
-  font-weight: 600;
-  letter-spacing: 2px;
-  display: inline-block;
-  padding: 0 30px;
-}
-*/
 
 .media ul li a:hover{
     color: #DEF4E2;
@@ -196,15 +156,15 @@ body {
 }
 
 .first {
-  background: #DEF4E2;
+  background: #FA9865;
 }
 
 .second {
-  background: #efde74;
+  background: #FA9865;
   left: 33.3%;
 }
 
 .third {
-  background: #DEF4E2;
+  background: #FA9865;
   left: 66.6%;
 }
