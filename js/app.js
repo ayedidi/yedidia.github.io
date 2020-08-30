@@ -7,12 +7,12 @@ const section = document.querySelector('section');
 var controller = new ScrollMagic.Controller({vertical: false});
 
 
-  var horizontalSlide = new TimelineMax()
-  // animate panels
-  .to(video, 1,   {x: "-20%"})	
-  .to(video, 1,   {x: "-40%"})
-  .to(video, 1,   {x: "-60%"})
-  .to(video, 1,   {x: "-80%"})
+//  var horizontalSlide = new TimelineMax()
+//  // animate panels
+//  .to(video, 1,   {x: "-20%"})	
+//  .to(video, 1,   {x: "-40%"})
+//  .to(video, 1,   {x: "-60%"})
+//  .to(video, 1,   {x: "-80%"})
 
 var scene1 = new ScrollMagic.Scene({
     duration: 1000,

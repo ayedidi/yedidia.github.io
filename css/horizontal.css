@@ -1,4 +1,15 @@
+/*
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*/
 
+body {
+  font-family: 'Poppins';
+  overflow: hidden;
+}
 .blink {
   animation: blinker 1.2s linear infinite;
 }
@@ -109,30 +120,30 @@ transform: translate(-50%, -50%);
     z-index: 1;
 }
 
-.clickMe {
-    border-radius: 10px;
-    color: white;
-    background-color: black;
-}
 
-.clickMe a{
-    border-radius: 10px;
-    color: white;
-    background-color: black;
+.media ul li a:hover{
+    color: #DEF4E2;
     text-decoration: none;
 }
 
-.clickMe a:hover{
-    border-radius: 10px;
-    color: red;
+.media ul li a{
+    color: #B1DECA;
     text-decoration: none;
 }
 
-.footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
-    z-index: 2;
+.media ul {
+  position: absolute;
+    bottom: 350px;
+    left: -140px;
+    transform: rotate(-90deg);
+    z-index: 1;
+    list-style: none;
+}
+
+.media ul li{
+    letter-spacing: 2px;
+    display: inline-block;
+    text-decoration: none;
+    padding: 0 30px;
+    color: #DEF4E2;
 }

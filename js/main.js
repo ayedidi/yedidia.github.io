@@ -66,6 +66,18 @@ $(".sex").click(function() {
     
 });
 
+$(".all").click(function() {
+    $(".relSelf").show();
+    $(".relOthers").show();
+    $(".forGrief").show();
+    $(".idSex").show();
+    
+});
+
+
+
+
+
 
 //$(".message").click(typeWriter);
 //

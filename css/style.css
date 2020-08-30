@@ -1,35 +1,25 @@
-html {
-  font-size: 120%;
-/*  font-family: 'Montserrat', sans-serif;*/
-    
+*{
+    margin: 0;
+    padding: 0;
 }
 
-/*
 body{
     font-size: 3rem;
+    font-family: 'Poppins';
     padding: 0px;
     margin: 0px;
     background-color: black;
 }
-*/
 
-
-
-.chat{
-    border-color: darkslategrey;
-    height: 150px;
-    width: 250px;
-    border-bottom-style: groove;
-    border-right-style: groove;
-    border-top-style: none;
-    border-left-style: none;
-    top: 100px;
-    right: 50px;
+.blogImg{
+    height: 300px;
+    width: 400px;
+    border-radius: 10px;
 }
 
-.about{
-    background-image: url(img/flowBack1400.png);
-    width: 100%;
+a:hover{
+    text-decoration: none;
+    color: #fff;
 }
 
 .under{
@@ -70,58 +60,36 @@ body{
     
 }
 
-/*
-.dropdown-divider {
-    border-style: none;
-    border-top-style: dashed;
-    border-color: #b5838d;
-    border-width: 5px;
-    width: 100%;
-    text-align: center;
+.topics{
+    margin-left: 20%;
 }
-*/
 
+/*
 a{
     color: #fff;
 }
+*/
 
-a:hover{
-    color: #fff;
-}
-
-
-
-button{
-    background-color: #388A78;
+.topics button{
+    background-color: transparent;
     font-size: 18px;
-    border-color: #388A78;
+    border-color: transparent;
     padding-right: 10px;
     border-style: double;
-/*    line-height: 1;*/
+    line-height: 1;
   text-align: center;
-  color: #fff;
+  color: #B1DECA;
   border-radius: 10px;
   text-decoration: none;
 }
 
-button:hover{
-    background-color: black;
-    border-color: black;
+.topics button:hover{
+    background-color: transparent;
+    border-color: transparent;
+    color: black;
 }
 
 
-/*
-.action{
-    background-color: #659DA3;
-    color: white;
-    font-size: 18px;
-    border-bottom-style: inset;
-    border-radius: 20px;
-    height: 30px;
-    width: 120px;
-    border-color: #659DA3;
-}
-*/
 
 .offset:before{
     height: 4rem;
@@ -130,35 +98,10 @@ button:hover{
     display: block;
 }
 
-h1{
-    text-align: center;
-    color:;
-}
 
-h2{
-   text-align: center;
-    color: ; 
+.article{
+    
 }
-
-.one{
-    background-color: #659DA3;
-    color: #fff;
-}
-
-.two{
-    background-image: linear-gradient(to right, #388A78 , #3A92A1);
-    color: #fff;
-}
-
-.three{
-    background-color:  #3A92A1;
-    color: #fff;
-}
-
-.four{
-    background-color:  #388A78;
-}
-
 
 video{
      width: 100%    !important;
@@ -167,6 +110,7 @@ video{
     
 }
 
+/*
 .preview{
     text-align: center;
 }
@@ -176,11 +120,39 @@ video{
 }
 
 .placeholder{
-/*    padding: 2rem 1rem 1rem;*/
+    padding: 2rem 1rem 1rem;
     margin: 0 auto 0 auto;
     height: 800px;
     width: 1000px;
     background-color: #FFDDD2;
+}
+*/
+
+.media ul li a:hover{
+    color: #DEF4E2;
+    text-decoration: none;
+}
+
+.media ul li a{
+    color: #B1DECA;
+    text-decoration: none;
+}
+
+.media ul {
+  position: fixed;
+    bottom: 350px;
+    left: -260px;
+    transform: rotate(-90deg);
+    z-index: 1;
+    list-style: none;
+}
+
+.media ul li{
+    letter-spacing: 2px;
+    display: inline-block;
+    text-decoration: none;
+    padding: 0 30px;
+    color: #DEF4E2;
 }
 
 
@@ -253,6 +225,7 @@ video{
 
 /*FLOATING MENU*/
 
+/*
 * {
   font-size: inherit;
   font-family: inherit;
@@ -264,7 +237,7 @@ video{
     top: 100%;
     left: 50%;
   position: absolute !important;
-/*  clip: rect(1px, 1px, 1px, 1px);*/
+  clip: rect(1px, 1px, 1px, 1px);
   padding:0 !important;
   border:0 !important;
   height: 1px !important;
@@ -349,3 +322,4 @@ label {
   margin-top: 0.125rem;
   white-space: nowrap;
 }
+*/
