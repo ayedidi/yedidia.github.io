@@ -1,25 +1,35 @@
-*{
+* {
     margin: 0;
     padding: 0;
+    font-family: 'Poppins';
+    font-weight: 100;
+    color: white;
+    
 }
 
 body{
     font-size: 3rem;
-    font-family: 'Poppins';
-    padding: 0px;
-    margin: 0px;
-    background-color: black;
+    
+}
+
+hr .dashed{
+    border-top: 1px dashed red;
 }
 
 .blogImg{
     height: 300px;
-    width: 400px;
+    width: 500px;
     border-radius: 10px;
 }
 
+.blogs a{
+    text-decoration-style: dashed;
+}
+
 a:hover{
-    text-decoration: none;
+    text-decoration-style: dashed;
     color: #fff;
+    text-decoration-color: #FCB9A4;
 }
 
 .under{
@@ -27,11 +37,6 @@ a:hover{
 }
 
 .over{
-/*
-    position: relative;
-    top:30px;
-    left: 30px;
-*/
     z-index: 1;
 }
 
@@ -44,31 +49,9 @@ a:hover{
     padding: 3% 15%;
 }
 
-.navbar {
-/*    background-color: #c9ada7;*/
-    padding-bottom: 10px;
-}
-
-.navbar-custom .nav-item.active .nav-link,
-.navbar-custom .nav-item:hover .nav-link{
-    color: white;
-}
-
-.btn-group-toggle{
-    font-family: sans-serif;
-    
-    
-}
-
 .topics{
     margin-left: 20%;
 }
-
-/*
-a{
-    color: #fff;
-}
-*/
 
 .topics button{
     background-color: transparent;
@@ -78,17 +61,16 @@ a{
     border-style: double;
     line-height: 1;
   text-align: center;
-  color: #B1DECA;
-  border-radius: 10px;
-  text-decoration: none;
+  color: #fff;
+  text-decoration-style: dashed;
 }
 
 .topics button:hover{
     background-color: transparent;
     border-color: transparent;
     color: black;
+    text-decoration-style: dashed;
 }
-
 
 
 .offset:before{
@@ -103,6 +85,37 @@ a{
     
 }
 
+.badge{
+    background-color: #FCB9A4;
+}
+
+.badgeOne{
+    background-color: #FCDFA4;
+}
+
+.postImg{
+    width: 100%;
+    height: 400px;
+}
+
+.profileImg{
+    display: inline;
+    height: 50px;
+}
+
+.author{
+    display: inline;
+}
+
+.profile a{
+    color: #B1DECA;
+}
+
+.profile a:hover{
+    text-decoration: none;
+    color: #DEF4E2;
+}
+
 video{
      width: 100%    !important;
   height: auto   !important;
@@ -110,23 +123,6 @@ video{
     
 }
 
-/*
-.preview{
-    text-align: center;
-}
-
-.preview img{
-    height: 300px; width: 500px;
-}
-
-.placeholder{
-    padding: 2rem 1rem 1rem;
-    margin: 0 auto 0 auto;
-    height: 800px;
-    width: 1000px;
-    background-color: #FFDDD2;
-}
-*/
 
 .media ul li a:hover{
     color: #DEF4E2;
@@ -134,7 +130,7 @@ video{
 }
 
 .media ul li a{
-    color: #B1DECA;
+    color: #fff;
     text-decoration: none;
 }
 
@@ -222,6 +218,30 @@ video{
 .services{
     padding: 3%;
 }
+
+/* Style the header: fixed position (always stay at the top) */
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: #f1f1f1;
+}
+
+/* The progress container (grey background) */
+.progress-container {
+  width: 100%;
+  height: 8px;
+  background: #ccc;
+}
+
+/* The progress bar (scroll indicator) */
+.progress-bar {
+  height: 8px;
+  background: #DEF4E2;
+  width: 0%;
+}
+
 
 /*FLOATING MENU*/
 
