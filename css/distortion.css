@@ -12,6 +12,9 @@ body {
   overflow: hidden;
 }
 
+.highlight {
+    background-color: #B1DECA;
+}
 
 
 /* SOCIAL MEDIA
@@ -20,6 +23,7 @@ body {
 .media ul li a:hover{
     color: #DEF4E2;
     text-decoration: none;
+    background-color: #B1DECA;
 }
 
 .media ul li a{

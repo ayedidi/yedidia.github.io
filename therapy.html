@@ -13,7 +13,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Therapy with Yedidia</title>
 </head>
-<body style="background-color: #FA9865;">
+<body>
     
         <!-- MEDIA
     =============================== -->
@@ -28,18 +28,46 @@
         
     </div>
     
-    <div id="calendar"></div><br>
     
     
-    <div class="topics">
+<!--    BACKGROUND COLOR CHANGERS-->
+    <div>
+       <button class="readable">Orange</button>
+         <button class="white">White</button>
+    </div>
+<!--    BACKGROUND COLOR-->
+    
+<!--    LANG CHANGER-->
+  <div>
+<select id="lang-switch">
+  <option value="en">English</option>
+  <option value="fr">Français</option>
+  <option value="ni">日本</option>
+  <option value="li">Lingala</option>
+</select>
+
+<h1><span lang="en">Thoughts</span> <span lang="fr">Titulo</span> <span lang="ni">職銜</span><span lang="li">職銜</span></h1>
+
+<p lang="en">Welcome to my site!</p>
+<p lang="fr">¡Bienvenido a mi sitio web!</p>
+<p lang="ni">歡迎來到我的網站!</p>
+  <p lang="li">歡迎來到我的網站!</p>
+   </div>
+<!--    LANG CHANGER-->
+   
+
+       
+<!--  TOPICS                   -->
+        <div class="topics">
         <button class="self">The Self</button>
         <button class="others">Self & Others</button>
         <button class="grief">Forgiveness, Shame & Grief</button>
         <button class="sex">Identity & Sexuality</button>
         <button class="all">All</button>
     </div>
-    
-   
+      
+<!--  TOPICS                   -->
+         
     <div class="container blogs">
        <div class="row">
        <div class="col-lg-8 col-md-10 mx-auto">
@@ -114,13 +142,15 @@
             <a href="about.html">Yedidia</a>
             on August 24, 2019</p>
         </div>
-<!--        <hr>-->
+        <hr>
         </div>
         </div>
         </div>
    </div>
     
-     
+<!--  CALENDAR     -->
+    <div id="calendar"></div><br>
+<!--  CALENDAR     -->  
       
 <script src="js/main.js" charset="utf-8"></script>
 <!-- JS, Popper.js, and jQuery -->

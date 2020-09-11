@@ -22,38 +22,28 @@ body {
 
 
 .slide {
-    width: 100vw;
+    width: 95vw;
     height: 100vh;
 }
 
 .wrapper {
     display: flex;
     flex-direction: row;
-    width: 500vw;
+    width: 380vw;
     transform: rotate(90deg) translateY(-100vh);
     transform-origin: top left;
 }
 
 .one {
-/*    background: #bb3b0e;*/
-    background: url(/img/myHouse.png);
-    background-position: center center;
-     background-repeat: no-repeat;
-    background-size: cover;
-    color: #fff;
-    background-color: aquamarine;
+    background: linear-gradient(to left, #B1DECA, #B1DECA 50%, #DEF4E2 75%, #DEF4E2 75%);
 }
 
 .two {
-    background: url(/img/repeat.png);
-    background-position: center center;
-     background-repeat: no-repeat;
-    background-size: cover;
-    color: #fff;
+    background-color: #B1DECA;
 }
 
 .three {
-    background: #708160;
+    background: #bb3b0e;
 }
 
 .four {
@@ -63,6 +53,102 @@ body {
     background-size: cover;
     color: #fff;
 }
+
+#lang-switch {
+    border-radius: 10px;
+    border-color: aqua;
+    background-color: lightcoral;
+}
+
+/*ARROWS*/
+.arrowUp {
+    position: fixed;
+    top: 5%;
+    left: 11%;
+}
+
+.arrowDown {
+    top: 85%;
+    left: 11%;
+    position: fixed;
+}
+
+arrowRight {
+    top: 55%;
+    left: 0%;
+    position: fixed;
+}
+
+.arrowUpA {
+    position: fixed;
+    top: 5%;
+    left: 35%;
+}
+
+.arrowDownA {
+    align-content: center;
+    top: 85%;
+    left: 35%;
+    position: fixed;
+}
+
+arrowRightA {
+    top: 55%;
+    left: 11%;
+    position: fixed;
+}
+
+arrowLeft {
+    align-content: center;
+    top: 55%;
+    left: 11%;
+    position: fixed;
+}
+
+.arrowUpB {
+    align-content: center;
+    position: fixed;
+    top: 5%;
+    left: 60%;
+}
+
+.arrowDownB {
+    top: 85%;
+    left: 60%;
+    position: fixed;
+}
+
+arrowRightB {
+    top: 85%;
+    left: 11%;
+    position: fixed;
+}
+
+arrowLeftB {
+    top: 55%;
+    left: 11%;
+    position: fixed;
+}
+
+.arrowUpC {
+    position: fixed;
+    top: 5%;
+    left: 87%;
+}
+
+.arrowDownC {
+    top: 85%;
+    left: 87%;
+    position: fixed;
+}
+
+arrowLeftC {
+    top: 55%;
+    left: 0%;
+    position: fixed;
+}
+
+/*ARROWS*/
 
 /*
 .wrapper .game{
