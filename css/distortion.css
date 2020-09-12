@@ -139,6 +139,32 @@ body {
 }
 */
 
+/*ARROWS
+=========================== */
+
+.arrows {
+    border-color: transparent;
+    background-color: transparent;
+    
+}
+
+
+.arrowUp {
+    position: fixed;
+    top: 40%;
+    left: 51%;
+}
+
+.arrowDown {
+    top: 55%;
+    left: 51%;
+    position: fixed;
+}
+
+
+/*ARROWS*/
+
+
 /* DISTORTION
 =========================== */
 .distortion {

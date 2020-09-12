@@ -76,7 +76,7 @@ body {
 arrowRight {
     top: 55%;
     left: 0%;
-    position: fixed;
+    position: static;
 }
 
 .arrowUpA {
