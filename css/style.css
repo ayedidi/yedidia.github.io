@@ -250,6 +250,11 @@ video{
     
 }
 
+.section__title {
+    position: relative;
+    top: 50%;
+}
+
 /*ARROWS*/
 
 
@@ -267,6 +272,54 @@ video{
     position: fixed;
     border-color: transparent;
     background-color: transparent;
+}
+
+.outer-border {
+    height: 667px;
+    width: 375px;
+}
+
+.border {
+    left: 20px;
+    margin: 10px;
+    background-color: #B1DECA;;
+    border: none;
+    height: 414px;
+    width: 300px;
+}
+
+.linkContainer {
+    margin: 50px;
+    background-color: orange;
+    height: 414px;
+    width: 300px;
+    
+}
+
+.linkContainer ul{
+    list-style: none;
+    
+}
+
+.linkContainer li{
+    list-style: none;
+    margin-top: 10px;
+    height: 30px;
+    width: 150px;
+    
+}
+
+.links a{
+    text-decoration: none;
+    color: #B1DECA;
+    
+}
+
+.links a:hover{
+    text-decoration: none;
+    color: black;
+    background-color: #B1DECA;
+    
 }
 
 

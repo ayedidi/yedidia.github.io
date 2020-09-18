@@ -1,73 +1,83 @@
 //USER INTERFACE CONTROLLER
 var UIController = (function() {
-   
-    const sectionName = ["Animation", "Games", "Yoga", "Music", "Thoughts"];
+
     
-    for (let index = 0; index < sectionName.length; index++) {
-        var section = sectionName[index];
-        console.log(section);
-         document.querySelector(".section__title").innerHTML = section;
+    var title = document.querySelector(".section__title").innerHTML;
+//1. List section options
+    var sectionName = ["Yoga", "Elladia Studio", "Animation", "Thoughts"];
+//a. starting position
+//    var count = [0];
+    
+function nextSection(sectionName) {
+    
+    var numberOfSections = sectionName.length;
+    var sectionUp = count++;
+    var sectionDown = count--;
+    
+    
+    title = section.toUpperCase();
+    
+};    
+    
+    
+//2. Print the first section option  
+    
+    
+    
+    for (let count = [0]; count < sectionName.length; count++) {
+        
+        var section = sectionName[count];
+        console.log(sectionName[count]);
+//         document.querySelector(".section__title").innerHTML = section.toUpperCase();
     
     }
-//    var image = document.querySelector(".section__image")
-    
 
-})();
-
-
+//3. Buttons go up and down the array    
 //SCROLL CONTROLLER
 var ctrlArrows = (function() { 
     
 document.querySelector('.arrowUp').addEventListener('click', function(){
-    
-       document.querySelector(".section__title").innerHTML = section;
+        section++;
+
+        console.log("clicked up."); 
     });
 
 
  document.querySelector('.arrowDown').addEventListener('click', function(){
-       console.log("clicked down."); 
+     section--;
+
+     console.log("clicked down."); 
     });
     
-}) ();
+}) ();    
 
-var controller = (function (ctrlArrows, UIController) {
-    
-//1. Display section info
-//var showSection = UIController.displaySection();
-//    console.log(showSectionSection);
-    
-//2. Change section with arrows
+})();
 
-    
-//var wasdCtrl = (function() {
-//       document.addEventListener('keypress', function(e){
-//       if (event.keyCode === 119 || event.which === 119) {
-//           console.log("code w for up");
-//           
-//           
-//        } else if (event.keyCode === 97 || event.which === 97) {
-//            console.log("code a for left");
-//            
-//            
-//        } else if (event.keyCode === 115 || event.which === 115) {
-//            console.log("code s for down");
-//            
-//            
-//        } else if (event.keyCode === 100 || event.which === 100) {
-//            console.log("code d for right");
-//            
-//            
-//        } else if (event.keyCode === 32 || event.which === 32) {
-//            console.log("code space for jump");
-//            
-//            
-//        } 
-//           
-//    });    
-//     
-//});
 
-   
-});
+var output = [];
+var count = 1;
 
+function fizzBuzz() {
+  
+while(count <= 100) {
     
+};    
+    if (count % 5 === 0 && count % 3 === 0) {
+        output.push("FizzBuzz");
+    } else if (count % 5 === 0) {
+        output.push("Buzz");
+    } else if (count % 3 === 0){
+        output.push("Fizz");
+    } else {
+        output.push(count);
+    };
+    
+    
+    count++;
+    
+    
+    
+    console.log(output);
+};
+
+
