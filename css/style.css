@@ -327,6 +327,7 @@ video{
   height: 350px;
   width: 600px;
 }
+
 .text h1 .hidetext {
   position: absolute;
 }
@@ -448,13 +449,19 @@ video{
 
 /* Caption text */
 .caption {
-  color: #f2f2f2;
-  font-size: 45px;
-  padding: 8px 12px;
+  padding: 0px 12px;
   position: absolute;
-  bottom: 20%;
+  bottom: 50%;
+  text-align: right;
+  font-size: 80px;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: -7px;
+    color: #B1DECA;
+/*  position: relative;*/
+/*  overflow: hidden;*/
+  height: 350px;
   width: 100%;
-  text-align: center;
 }
 
 /* Fading animation */
