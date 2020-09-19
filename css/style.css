@@ -9,7 +9,7 @@
 
 body{
     font-size: 3rem;
-    
+    scroll-behavior: smooth;
 }
 
 .logo img{
@@ -405,6 +405,9 @@ video{
     background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+    
+    scroll-snap-type: y mandatory;
+  overflow-x: scroll;
 }
 
 .slideImg {
@@ -423,6 +426,7 @@ video{
 /* Hide the images by default */
 .mySlides {
   display: none;
+    scroll-snap-align: start;
 }
 
 /* Next & previous buttons */
@@ -445,6 +449,7 @@ video{
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
+
 }
 
 
@@ -487,4 +492,10 @@ video{
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+
+
+/*SCROLLBAR NOT DISPLAYED*/
+::-webkit-scrollbar {
+    display: none;
 }
