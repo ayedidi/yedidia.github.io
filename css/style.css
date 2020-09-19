@@ -203,6 +203,7 @@ video{
   width: 0%;
 }
 
+/*LANGUAGE CONTROL*/
 #lang-switch {
     border-radius: 10px;
     border-color: #DEF4E2;
@@ -213,24 +214,6 @@ video{
     top: 50%;
 }
 
-/*ARROWS*/
-
-
-.up {
-    position: relative;
-    top: 5%;
-    left: 51%;
-    border-color: transparent;
-    background-color: transparent;
-}
-
-.down {
-    top: 85%;
-    left: 51%;
-    position: fixed;
-    border-color: transparent;
-    background-color: transparent;
-}
 
 .outer-border {
     height: 667px;
