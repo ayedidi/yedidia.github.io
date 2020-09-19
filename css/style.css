@@ -413,9 +413,9 @@ video{
 
 /* Next & previous buttons */
 .prev, .next {
+    color: #DEF4E2;
     transform: rotate(-90deg);
    position: absolute;
-    color: white;
     font-size: 40px;
     font-weight: bold;
     cursor: pointer;
