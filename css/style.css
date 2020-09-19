@@ -20,8 +20,7 @@ body{
 }
 
 #lang-switch{
-    margin: 10px;
-    display: inline;
+    margin: 5px;
 }
 
 /*
@@ -97,10 +96,7 @@ a:hover{
 }
 
 
-.article{
-    
-}
-
+/*Article*/
 .badge{
     background-color: #FCB9A4;
 }
@@ -140,6 +136,7 @@ video{
 }
 
 
+/*MEDIA*/
 .media ul li a:hover{
     color: #DEF4E2;
     text-decoration: none;
@@ -208,8 +205,7 @@ video{
 
 #lang-switch {
     border-radius: 10px;
-    border-color: aqua;
-    
+    border-color: #DEF4E2;
 }
 
 .section__title {
@@ -323,7 +319,9 @@ video{
 }
 
 .media {
-   z-index: 10; 
+   z-index: 1; 
+    font-size: 20px;
+/*    position: fixed;*/
 }
 
 
@@ -404,7 +402,6 @@ video{
     width: auto;
   position: relative;
   margin: auto;
-    z-index: 3;
     background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -424,30 +421,27 @@ video{
 }
 
 /* Hide the images by default */
-/*
 .mySlides {
   display: none;
 }
-*/
 
 /* Next & previous buttons */
 .prev, .next {
     transform: rotate(-90deg);
-    z-index: 1;
+   position: absolute;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
 }
 
 
 .prev {
-  cursor: pointer;
-  position: absolute;
   top: 80%;
     left: 50%;
   width: auto;
 /*  margin-top: -22px;*/
   padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 30px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
@@ -455,16 +449,11 @@ video{
 
 
 .next {
-    cursor: pointer;
-  position: absolute;
   top: 10%;
     left: 50%;
   width: auto;
   margin-top: -22px;
   padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 30px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
@@ -477,7 +466,7 @@ video{
   font-size: 45px;
   padding: 8px 12px;
   position: absolute;
-  bottom: 8px;
+  bottom: 20%;
   width: 100%;
   text-align: center;
 }
