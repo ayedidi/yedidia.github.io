@@ -26,3 +26,27 @@ function showSlides(n) {
 }
 
 showSlides();
+
+
+
+
+//CHANGE SLIDE ON SCROLL
+window.addEventListener('scroll', function() {
+   
+    let scrollDown = document.documentElement.scrollHeight - window.innerHeight; 
+    let scrollUp = 0;
+    let scrolled = window.scrollY;
+
+    
+    if (scrolled === scrollUp) {
+        
+        console.log("scrolled up works");
+    } else if (scrolled === scrollDown) {
+        console.log("scrolled to scrollable");
+    } else {
+        
+    }
+   
+    });
+    
+
