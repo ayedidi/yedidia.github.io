@@ -434,9 +434,9 @@ video{
 
 }
 
-.mob {
+.mobL {
   top: 50%;
-    left: 50%;
+    left: 25%;
   width: auto;
 /*  margin-top: -22px;*/
   padding: 16px;
@@ -445,6 +445,19 @@ video{
   user-select: none;
 
 }
+
+.mobR {
+  top: 50%;
+    left: 25%;
+  width: auto;
+/*  margin-top: -22px;*/
+  padding: 16px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+
+}
+
 
 
 
