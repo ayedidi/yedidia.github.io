@@ -284,7 +284,7 @@ video{
 .media ul {
   position: absolute;
     bottom: 50%;
-    left: -140px;
+    left: -100px;
     transform: rotate(-90deg);
     z-index: 1;
     list-style: none;
@@ -414,7 +414,6 @@ video{
 /* Next & previous buttons */
 .prev, .next {
     color: #DEF4E2;
-    transform: rotate(-90deg);
    position: absolute;
     font-size: 40px;
     font-weight: bold;
@@ -426,6 +425,19 @@ video{
   top: 80%;
     left: 50%;
   width: auto;
+    transform: rotate(-90deg);
+/*  margin-top: -22px;*/
+  padding: 16px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+
+}
+
+.mob {
+  top: 50%;
+    left: 50%;
+  width: auto;
 /*  margin-top: -22px;*/
   padding: 16px;
   transition: 0.6s ease;
@@ -435,9 +447,11 @@ video{
 }
 
 
+
 .next {
   top: 10%;
     left: 50%;
+    transform: rotate(-90deg);
   width: auto;
   margin-top: -22px;
   padding: 16px;
@@ -445,6 +459,7 @@ video{
   border-radius: 0 3px 3px 0;
   user-select: none;
 }
+
 
 
 /* Caption text */
