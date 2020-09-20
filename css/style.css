@@ -305,13 +305,6 @@ video{
 /*    position: fixed;*/
 }
 
-
-.mobile ul li a:hover{
-    color: #DEF4E2;
-    text-decoration: none;
-    background-color: #B1DECA;
-}
-
 .mobile ul li a{
     color: #B1DECA;
     text-decoration: none;
@@ -324,13 +317,16 @@ video{
     width: 150px;
     z-index: 1;
     list-style: none;
+    top: 85%;
+    left: 35%;
 }
 
 .mobile ul li{
     letter-spacing: 2px;
     display: inline-block;
     text-decoration: none;
-    padding: 0 30px;
+    padding: 2% 50%;
+    font-size: 20px;
     color: #DEF4E2;
     
 }
@@ -466,7 +462,7 @@ video{
 
 .mobL {
   top: 80%;
-    left: 5%;
+    left: 25%;
   width: auto;
 /*  margin-top: -22px;*/
   padding: 16px;
@@ -477,8 +473,10 @@ video{
 }
 
 .mobR {
-  bottom: 0%;
-    right: -50%;
+/*  bottom: 0%;*/
+    top: 0%;
+    left: 20%;
+/*    right: -50%;*/
   width: auto;
   margin-top: -22px;
   padding: 16px;
