@@ -306,6 +306,35 @@ video{
 }
 
 
+.mobile ul li a:hover{
+    color: #DEF4E2;
+    text-decoration: none;
+    background-color: #B1DECA;
+}
+
+.mobile ul li a{
+    color: #B1DECA;
+    text-decoration: none;
+}
+
+.mobile ul {
+  position: absolute;
+    bottom: 50%;
+    left: -100px;
+    z-index: 1;
+    list-style: none;
+}
+
+.mobile ul li{
+    letter-spacing: 2px;
+    display: inline-block;
+    text-decoration: none;
+    padding: 0 30px;
+    color: #DEF4E2;
+    
+}
+
+
 /* TEXT
 =========================== */
 .text {
