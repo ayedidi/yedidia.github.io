@@ -320,7 +320,7 @@ video{
 .mobile ul {
   position: absolute;
     bottom: 50%;
-    left: -100px;
+    left: -80px;
     z-index: 1;
     list-style: none;
 }
