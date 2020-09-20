@@ -309,7 +309,7 @@ video{
     width: 150px;
     z-index: 1;
     list-style: none;
-    top: 85%;
+    top: 5%;
     left: 35%;
 }
 
@@ -450,7 +450,7 @@ video{
 }
 
 .mobL {
-  top: 70%;
+  top: 75%;
     left: 15%;
   width: auto;
 /*  margin-top: -22px;*/
@@ -463,8 +463,8 @@ video{
 
 .mobR {
     top: 0%;
-    right: -0%;
-/*    left: 20%;*/
+    right: -80%;
+    bottom: 30%;
 /*    right: -50%;*/
   transition: 0.6s ease;
   user-select: none;
