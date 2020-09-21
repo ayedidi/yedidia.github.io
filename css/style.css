@@ -308,12 +308,12 @@ video{
 .mobile ul {
   position: absolute;
     bottom: 70%;
-    height: 50px;
-    width: 150px;
+/*    height: 50px;*/
+/*    width: 350px;*/
     z-index: 1;
     list-style: none;
     top: 5%;
-    left: 35%;
+/*    left: 35%;*/
     
 }
 
@@ -321,7 +321,7 @@ video{
     letter-spacing: 2px;
     display: inline-block;
     text-decoration: none;
-    padding: 2% 50%;
+    padding: 2% 10%;
     font-size: 20px;
     color: #DEF4E2;
     
