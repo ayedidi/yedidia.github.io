@@ -515,7 +515,7 @@ video{
 
 .captionm {
   padding: 40px 12px;
-  position: absolute;
+  position: fixed;
   bottom: 15%;
   text-align: right;
   font-size: 70px;
