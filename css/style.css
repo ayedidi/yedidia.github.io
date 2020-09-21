@@ -86,6 +86,9 @@ a:hover{
 }
 
 
+/*SECTIONS*/
+
+
 /*Article*/
 .badge{
     background-color: #FCB9A4;
@@ -214,7 +217,7 @@ video{
     left: 20px;
     margin: 20px;
     padding: 10px;
-    background-color: #B1DECA;;
+    background-color: #B1DECA;
     border: none;
     height: 414px;
     width: 300px;
@@ -451,7 +454,7 @@ video{
 }
 
 .mobL {
-  top: 80%;
+  top: 81%;
     left: 0%;
     position: fixed;
     transform: rotate(-90deg);
