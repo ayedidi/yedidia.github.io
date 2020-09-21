@@ -215,6 +215,13 @@ body {
   
 }
 
+video{
+     width: 100%    !important;
+  height: auto   !important;
+    text-align: center;
+    
+}
+
 /*MENU*/
 
 
