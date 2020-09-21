@@ -306,13 +306,14 @@ video{
 }
 
 .mobile ul {
-  position: absolute;
-    bottom: 70%;
+  position: fixed;
+    top: 80%;
 /*    height: 50px;*/
 /*    width: 350px;*/
     z-index: 1;
     list-style: none;
-    top: 5%;
+    left: 40%;
+    text-align: right;
 /*    left: 35%;*/
     
 }
