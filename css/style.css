@@ -542,7 +542,7 @@ video{
   width: 100%;
 }
 
-.captionm {
+.captionm a:hover{
   padding: 80px 12px;
   position: fixed;
   bottom: 10%;
@@ -552,7 +552,7 @@ video{
   text-transform: uppercase;
   font-weight: 800;
   letter-spacing: -7px;
-    color: #B1DECA;
+    color: white;
 /*  position: relative;*/
 /*  overflow: hidden;*/
   height: 350px;
