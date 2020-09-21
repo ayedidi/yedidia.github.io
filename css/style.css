@@ -328,6 +328,19 @@ video{
 }
 
 
+.readable {
+    background-color: #FA9865;
+    border-color: white;
+    color: white;
+    
+}
+
+.white {
+   background-color: white;
+    border-color: #FA9865; 
+    color: #FA9865;
+}
+
 /* TEXT
 =========================== */
 .text {
