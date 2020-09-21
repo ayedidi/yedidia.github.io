@@ -308,13 +308,10 @@ video{
 .mobile ul {
   position: fixed;
     top: 80%;
-/*    height: 50px;*/
-/*    width: 350px;*/
     z-index: 1;
     list-style: none;
-    left: 40%;
+    left: 20%;
     text-align: right;
-/*    left: 35%;*/
     
 }
 
@@ -515,7 +512,7 @@ video{
 }
 
 .captionm {
-  padding: 40px 12px;
+  padding: 80px 12px;
   position: fixed;
   bottom: 15%;
   text-align: right;
