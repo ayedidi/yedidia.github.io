@@ -55,7 +55,7 @@ a:hover{
 }
 
 .topics{
-    margin-left: 20%;
+    margin-left: 30%;
 }
 
 .topics button{
@@ -467,6 +467,18 @@ video{
 
 }
 
+.nextu {
+  top: 10%;
+    left: 50%;
+    transform: rotate(-90deg);
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
 .mobL {
   top: 80%;
     left: 0%;
@@ -492,22 +504,6 @@ video{
 }
 
 
-
-
-.nextu {
-  top: 10%;
-    left: 50%;
-    transform: rotate(-90deg);
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-
-
 /* Caption text */
 .caption a{
   padding: 140px 12px;
@@ -519,6 +515,22 @@ video{
   font-weight: 900;
   letter-spacing: -7px;
     color: #B1DECA;
+/*  position: relative;*/
+/*  overflow: hidden;*/
+  height: 350px;
+  width: 100%;
+}
+
+.caption a:hover{
+  padding: 140px 12px;
+  position: absolute;
+  bottom: 15%;
+  text-align: right;
+  font-size: 80px;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: -7px;
+    color: white;
 /*  position: relative;*/
 /*  overflow: hidden;*/
   height: 350px;
