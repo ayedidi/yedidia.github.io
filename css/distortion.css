@@ -6,35 +6,35 @@
 
 body {
   font-family: 'Poppins';
-  background: #03010D;
+  background: #1e352f;
   width: 100%;
   height: 100vh;
   overflow: hidden;
 }
 
 .highlight {
-    background-color: #B1DECA;
+    background-color: #f7dba7;
 }
 
 
-/* SOCIAL MEDIA
+/* DESKTOP MENU
 =========================== */
 
 .media ul li a:hover{
-    color: #DEF4E2;
+    color: #335145;
     text-decoration: none;
-    background-color: #B1DECA;
+    background-color: #f7dba7;
 }
 
 .media ul li a{
-    color: #B1DECA;
+    color: #f1ab86;
     text-decoration: none;
 }
 
 .media ul {
   position: absolute;
     bottom: 350px;
-    left: -140px;
+    left: -100px;
     transform: rotate(-90deg);
     z-index: 1;
     list-style: none;
@@ -45,9 +45,25 @@ body {
     display: inline-block;
     text-decoration: none;
     padding: 0 30px;
-    color: #DEF4E2;
+    color: #f1ab86;
+}
+/*#335145*/
+
+/*CURSOR*/
+.cursor{
+    height: 3rem;
+    width: 3rem;
+    border: 2px solid #f1ab86;
+    border-radius: 50%;
+    z-index: 3;
+    position: absolute;
+    transform: translate(-50%, -50%);
+/*    pointer-events: none;*/
 }
 
+.cursor-grow{
+    transform: scale(2);
+}
 
 /* TEXT
 =========================== */
@@ -142,27 +158,8 @@ body {
 /*ARROWS
 =========================== */
 
-.arrows {
-    border-color: transparent;
-    background-color: transparent;
-    
-}
 
 
-.arrowUp {
-    position: fixed;
-    top: 40%;
-    left: 51%;
-}
-
-.arrowDown {
-    top: 55%;
-    left: 51%;
-    position: fixed;
-}
-
-
-/*ARROWS*/
 
 /*SLIDESHOW
 =========================== */
@@ -227,7 +224,7 @@ video{
 
 
 .mobile ul li a{
-    color: #B1DECA;
+    color: #c57b57;
     text-decoration: none;
 }
 
@@ -274,15 +271,15 @@ video{
 }
 
 .first {
-  background: #FA9865;
+  background: #f7dba7;
 }
 
 .second {
-  background: #FA9865;
+  background: #f1ab86;
   left: 33.3%;
 }
 
 .third {
-  background: #FA9865;
+  background: #c57b57;
   left: 66.6%;
 }

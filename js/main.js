@@ -75,7 +75,7 @@ $(".all").click(function() {
 });
 
 $(".readable").click(function() {
-    document.body.style.backgroundColor = "#FA9865";
+    document.body.style.backgroundColor = "#c57b57";
     document.body.style.color = "white";
 });
 

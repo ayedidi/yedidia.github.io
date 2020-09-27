@@ -9,7 +9,8 @@
 
 body{
     font-size: 3rem;
-    scroll-behavior: smooth;
+    cursor: none;
+/*    watch https://www.youtube.com/watch?v=TpwpAYi-p2w*/
 }
 
 .logo img{
@@ -19,15 +20,11 @@ body{
     display: block;
 }
 
+
 #lang-switch{
     margin: 5px;
 }
 
-/*
-hr .dashed{
-    border-top: 1px dashed red;
-}
-*/
 
 .blogImg{
     height: 300px;
@@ -40,9 +37,8 @@ hr .dashed{
 }
 
 a:hover{
-    text-decoration-style: dashed;
+    text-decoration: none;
     color: #fff;
-    text-decoration-color: #FCB9A4;
 }
 
 .container-fluid{
@@ -58,6 +54,10 @@ a:hover{
     margin-left: 30%;
 }
 
+.topic-buttons{
+    text-align: right;
+}
+
 .topics button{
     background-color: transparent;
     font-size: 18px;
@@ -66,14 +66,14 @@ a:hover{
     border-style: double;
     line-height: 1;
   text-align: center;
-  color: black;
+  color: #f1ab86;
   text-decoration-style: dashed;
 }
 
 .topics button:hover{
-    background-color: transparent;
+    background-color: #f7dba7;
     border-color: transparent;
-    color: #FAD1AE;
+    color: #335145;
     text-decoration-style: dashed;
 }
 
@@ -129,21 +129,23 @@ video{
 }
 
 
-/*MEDIA*/
+/* DESKTOP MENU
+=========================== */
 .media ul li a:hover{
-    color: #DEF4E2;
+    color: #335145;
     text-decoration: none;
+    background-color: #f7dba7;
 }
 
 .media ul li a{
-    color: #fff;
+    color: #f1ab86;
     text-decoration: none;
 }
 
 .media ul {
-  position: fixed;
+  position: absolute;
     bottom: 350px;
-    left: -260px;
+    left: -100px;
     transform: rotate(-90deg);
     z-index: 1;
     list-style: none;
@@ -154,9 +156,9 @@ video{
     display: inline-block;
     text-decoration: none;
     padding: 0 30px;
-    color: #DEF4E2;
+    color: #f1ab86;
+    font-size: 20px;
 }
-
 
 
 /*TIMELINE*/
@@ -202,10 +204,6 @@ video{
     border-color: #DEF4E2;
 }
 
-.section__title {
-    position: relative;
-    top: 50%;
-}
 
 
 .outer-border {
@@ -248,60 +246,47 @@ video{
 
 .links a{
     text-decoration: none;
-    color: #B1DECA;
+    color: #f1ab86;
     
 }
 
 .links a:hover{
     text-decoration: none;
     color: black;
-    background-color: #B1DECA;
+    background-color: #f1ab86;
     
 }
 
 
-/*ARROWS*/
-
-/* SOCIAL MEDIA
-=========================== */
-
-.media ul li a:hover{
-    color: #DEF4E2;
-    text-decoration: none;
-    background-color: #B1DECA;
+/*CURSOR*/
+.cursor{
+    height: 3rem;
+    width: 3rem;
+    border: 2px solid #335145;
+    border-radius: 50%;
+    z-index: 3;
+    position: absolute;
+    transform: translate(-50%, -50%);
+/*    pointer-events: none;*/
 }
 
-.media ul li a{
-    color: #B1DECA;
-    text-decoration: none;
+.cursor-dot{
+    height: 2rem;
+    width: 2rem;
+    border: 2px solid #335145;
+    border-radius: 50%;
+    z-index: 3;
+    position: absolute;
+    transform: translate(-40%, -40%);
+/*    pointer-events: none;*/
 }
 
-.media ul {
-  position: absolute;
-    bottom: 50%;
-    left: -100px;
-    transform: rotate(-90deg);
-    z-index: 1;
-    list-style: none;
-}
-
-.media ul li{
-    letter-spacing: 2px;
-    display: inline-block;
-    text-decoration: none;
-    padding: 0 30px;
-    color: #DEF4E2;
-    
-}
-
-.media {
-   z-index: 1; 
-    font-size: 20px;
-/*    position: fixed;*/
+.cursor-grow{
+    transform: scale(1.5);
 }
 
 .mobile ul li a{
-    color: #B1DECA;
+    color: #f1ab86;
     text-decoration: none;
 }
 
@@ -323,13 +308,13 @@ video{
     padding: 2% 10%;
     font-size: 20px;
     font-weight: 200;
-    color: #DEF4E2;
+    color: #f1ab86;
     
 }
 
 
 .readable {
-    background-color: #FA9865;
+    background-color: #f1ab86;
     border-color: white;
     color: white;
     
@@ -337,8 +322,8 @@ video{
 
 .white {
    background-color: white;
-    border-color: #FA9865; 
-    color: #FA9865;
+    border-color: #f1ab86; 
+    color: #f1ab86;
 }
 
 /* TEXT
@@ -450,7 +435,6 @@ video{
    position: absolute;
     font-size: 40px;
     font-weight: bold;
-    cursor: pointer;
 }
 
 
@@ -514,7 +498,7 @@ video{
   text-transform: uppercase;
   font-weight: 900;
   letter-spacing: -7px;
-    color: #B1DECA;
+    color: #f1ab86;
 /*  position: relative;*/
 /*  overflow: hidden;*/
   height: 350px;
@@ -530,11 +514,12 @@ video{
   text-transform: uppercase;
   font-weight: 900;
   letter-spacing: -7px;
-    color: white;
+    color: #B1DECA;
 /*  position: relative;*/
 /*  overflow: hidden;*/
   height: 350px;
   width: 100%;
+    text-decoration: none;
 }
 
 .captionm a{
@@ -597,49 +582,36 @@ video{
 
 
 
-/*MENU
-
-*/
-
-
-#toggle {
-  width: 28px;
-  height: 30px;
-  margin: 10px auto;
-    z-index: 3;
+/* DISTORTION
+=========================== */
+.distortion {
+  width: 580px;
+  height: 720px;
+  position: absolute;
+  right: 300px;
+  bottom: 0;
 }
 
-#toggle div {
+/* OVERLAY
+=========================== */
+.overlay {
+  position: absolute;
   width: 100%;
-  height: 5px;
-  background: white;
-  margin: 4px auto;
-  transition: all 0.3s;
-  backface-visibility: hidden;
+  height: 100%;
+  top: 0%;
+  z-index: 99;
 }
 
-#toggle.on .one {
-  transform: rotate(45deg) translate(5px, 5px);
+.first {
+  background: #f7dba7;
 }
 
-#toggle.on .two {
-  opacity: 0;
+.second {
+  background: #f1ab86;
+  left: 33.3%;
 }
 
-#toggle.on .three {
-  transform: rotate(-45deg) translate(7px, -8px);
-}
-
-#menu {
-  color: white;
-  border: 1px solid white;
-  width: 150px;
-  height: 100px;
-  padding: 10px;
-  border-radius: 3px;
-  font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
-  line-height: 100px;
-  text-align: center;
-  margin: auto;
-  display: none;
+.third {
+  background: #c57b57;
+  left: 66.6%;
 }

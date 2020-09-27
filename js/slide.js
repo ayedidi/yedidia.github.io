@@ -27,32 +27,35 @@ function showSlides(n) {
 
 showSlides();
 
+let mouseCursor = document.querySelector(".cursor");
 
+window.addEventListener('mouseover', cursor);
+
+function cursor(e){
+    mouseCursor.style.top = e.pageY + "px";
+    mouseCursor.style.left = e.pageX + "px";
+}
 
 
 //CHANGE SLIDE ON SCROLL
-window.addEventListener('scroll', function() {
-   
-    let scrollDown = document.documentElement.scrollHeight - window.innerHeight; 
-    let scrollUp = 0;
-    let scrolled = window.scrollY;
-
+//window.addEventListener('scroll', function() {
+//   
+//    let scrollDown = document.documentElement.scrollHeight - window.innerHeight; 
+//    let scrollUp = 0;
+//    let scrolled = window.scrollY;
+//
+//    
+//    if (scrolled === scrollUp) {
+//        
+//        console.log("scrolled up works");
+//    } else if (scrolled === scrollDown) {
+//        console.log("scrolled to scrollable");
+//    } else {
+//        
+//    }
+//   
+//    });
     
-    if (scrolled === scrollUp) {
-        
-        console.log("scrolled up works");
-    } else if (scrolled === scrollDown) {
-        console.log("scrolled to scrollable");
-    } else {
-        
-    }
-   
-    });
-    
 
 
-$("#toggle").click(function() {
-  $(this).toggleClass("on");
-  $("#menu").slideToggle();
-});
-
+    // Custom mouse cursor.
