@@ -9,7 +9,7 @@
 
 body{
     font-size: 3rem;
-    cursor: none;
+/*    cursor: none;*/
 /*    watch https://www.youtube.com/watch?v=TpwpAYi-p2w*/
 }
 
@@ -221,6 +221,10 @@ video{
     width: 300px;
 }
 
+.link{
+    
+}
+
 .linkContainer {
     margin: 50px;
     padding: 50px;
@@ -259,27 +263,32 @@ video{
 
 
 /*CURSOR*/
+/*
 .cursor{
     height: 3rem;
     width: 3rem;
     border: 2px solid #335145;
     border-radius: 50%;
-    z-index: 3;
+    z-index: 1;
     position: absolute;
     transform: translate(-50%, -50%);
-/*    pointer-events: none;*/
+    pointer-events: none;
+    transition: all 0.32 ease;
+    transition-property: background, transform;
 }
+*/
 
+/*
 .cursor-dot{
-    height: 2rem;
-    width: 2rem;
+    height: 1rem;
+    width: 1rem;
     border: 2px solid #335145;
     border-radius: 50%;
-    z-index: 3;
+
     position: absolute;
     transform: translate(-40%, -40%);
-/*    pointer-events: none;*/
 }
+*/
 
 .cursor-grow{
     transform: scale(1.5);
@@ -357,7 +366,7 @@ video{
   top: 40px;
   left: -80px;
   color: #DEF4E2;
-  z-index: -1;
+/*  z-index: -1;*/
   font-size: 150px;
   font-weight: 600;
   letter-spacing: 8px;
@@ -435,6 +444,7 @@ video{
    position: absolute;
     font-size: 40px;
     font-weight: bold;
+    cursor: pointer;
 }
 
 
@@ -448,7 +458,7 @@ video{
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
-
+    
 }
 
 .nextu {
@@ -515,11 +525,9 @@ video{
   font-weight: 900;
   letter-spacing: -7px;
     color: #B1DECA;
-/*  position: relative;*/
-/*  overflow: hidden;*/
+    text-decoration: none;
   height: 350px;
   width: 100%;
-    text-decoration: none;
 }
 
 .captionm a{
@@ -615,3 +623,4 @@ video{
   background: #c57b57;
   left: 66.6%;
 }
+

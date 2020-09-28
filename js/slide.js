@@ -28,6 +28,7 @@ function showSlides(n) {
 showSlides();
 
 let mouseCursor = document.querySelector(".cursor");
+let links = document.querySelectorAll(".link");
 
 window.addEventListener('mouseover', cursor);
 
@@ -35,6 +36,15 @@ function cursor(e){
     mouseCursor.style.top = e.pageY + "px";
     mouseCursor.style.left = e.pageX + "px";
 }
+
+links.forEach(link => {
+   link.addEventListener("mouseover", () => {
+       mouseCursor.classList.add(".cursor-grow");
+   }); 
+    link.addEventListener("mouseleave", () => {
+       mouseCursor.classList.remove(".cursor-grow");
+   }); 
+});
 
 
 //CHANGE SLIDE ON SCROLL
