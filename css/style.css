@@ -160,6 +160,27 @@ video{
     font-size: 20px;
 }
 
+/*IMAGE HOVER CHANGE*/
+#imageChange {
+  height:281px;
+  width:450px;
+  margin:0 auto;
+}
+
+#imageChange img {
+  position:absolute;
+  left:0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+#imageChange img.top:hover {
+  opacity:0;
+}
+
+
 
 /*TIMELINE*/
 
@@ -261,6 +282,18 @@ video{
     
 }
 
+.images {
+    display: grid;
+}
+
+.images img{
+/*
+    height: 400px;
+    width: 400px;
+*/
+    text-align: center;
+    padding: 10px;
+}
 
 /*CURSOR*/
 /*

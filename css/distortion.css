@@ -250,6 +250,16 @@ video{
     
 }
 
+.images {
+    display: grid;
+}
+
+.images img{
+    height: 500px;
+    width: 500px;
+    padding: 10px;
+}
+
 /* DISTORTION
 =========================== */
 .distortion {
