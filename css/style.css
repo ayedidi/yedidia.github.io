@@ -238,6 +238,13 @@ video{
    border-color: #f1ab86; 
 }
 
+.projects h6{
+    color: gray;
+}
+
+.projects a:hover{
+    text-decoration: none;
+}
 /*-------------------------*/
 
 
