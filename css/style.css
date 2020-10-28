@@ -15,8 +15,8 @@ body{
 
 .logo img{
     margin: 10px;
-    height: 40px; 
-    width: 40px; 
+    height: 50px; 
+    width: 50px; 
     display: block;
 }
 
@@ -179,7 +179,66 @@ video{
 #imageChange img.top:hover {
   opacity:0;
 }
+/*-------------------------*/
 
+/*CODE*/
+.bodybody{
+    padding: 10% 20%;
+}
+
+.bodybody img{
+    height: 300px;
+    width: auto;
+    margin: 10px;
+}
+
+.bodybody p{
+    padding: 5px 0;
+}
+
+.bodybody h4{
+    padding: 10px 0;
+}
+
+.bodybody h2{
+    padding: 10px 0;
+}
+
+/*PROJECTS BUTTONS*/
+.roles a{
+    border-radius: 10px;
+    padding: 4px;
+    margin: 0 5px;
+    
+}
+
+.roles a:hover{
+    border-radius: 10px;
+    padding: 4px;
+    margin: 0 5px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.pm{
+    background-color: #FCDFA4;
+    color: #335145;
+   border-color: #FCDFA4;
+}
+
+.iD{
+    background-color: #335145;
+    color: white;
+   border-color: #335145;
+}
+
+.cd{
+    background-color: #f1ab86;
+    color: #335145;
+   border-color: #f1ab86; 
+}
+
+/*-------------------------*/
 
 
 /*TIMELINE*/
@@ -192,9 +251,6 @@ video{
 }
 
 
-.services{
-    padding: 3%;
-}
 
 /* Style the header: fixed position (always stay at the top) */
 .header {
