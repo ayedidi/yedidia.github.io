@@ -13,6 +13,10 @@ body{
 /*    watch https://www.youtube.com/watch?v=TpwpAYi-p2w*/
 }
 
+.whiteText{
+    color: #fff;
+}
+
 .logo img{
     margin: 10px;
     height: 50px; 
@@ -349,11 +353,8 @@ video{
     display: grid;
 }
 
-.images img{
-/*
-    height: 400px;
-    width: 400px;
-*/
+.images .row{
+     margin: 20px;
     text-align: center;
     padding: 10px;
 }
