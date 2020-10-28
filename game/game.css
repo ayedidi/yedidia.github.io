@@ -1,0 +1,37 @@
+* {
+    background-color: #335145;
+    color: #f1ab86;
+}
+
+body {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100vw;
+    height 100vh;
+    background-color: #335145;
+}
+
+.camera {
+    width: auto;
+    height 75vh;
+/*    background-color: #B1DECA;*/
+    overflow: hidden;
+    position: relative;
+}
+
+.map {
+    width: 100vmin;
+    height 100vmin;
+    background-color: #B1DECA;
+    background-size: 100%;
+    display: grid;
+    grid-template-rows: repeat(23, 1fr);
+    grid-template-columns: repeat(23, 1fr);
+    margin-top: 5%;
+}
+
+.player {
+    background-color: #f7dba7;
+    border: .30vmin solid black;
+}
