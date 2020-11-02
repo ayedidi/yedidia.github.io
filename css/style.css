@@ -728,7 +728,9 @@ video{
 }
 
 .overlay a:hover, .overlay a:focus {
-  color: #f1f1f1;
+/*  color: #f1f1f1;*/
+    text-decoration: none;
+    color: #f1ab86;  
 }
 
 .overlay .closebtn {
@@ -740,10 +742,10 @@ video{
 
 .menu {
   position: fixed;
-    top: 80%;
+    top: 0%;
     z-index: 1;
     list-style: none;
-    left: 45%;
+    left: 0%;
     text-align: center;
     color: #f1ab86;
     text-decoration: none;
@@ -759,6 +761,7 @@ video{
     color: #f1ab86;
     text-decoration: none;
 }
+
 
 @media screen and (max-height: 450px) {
   .overlay a {font-size: 20px}
