@@ -132,38 +132,6 @@ video{
     
 }
 
-
-/* DESKTOP MENU
-=========================== */
-.media ul li a:hover{
-    color: #335145;
-    text-decoration: none;
-    background-color: #f7dba7;
-}
-
-.media ul li a{
-    color: #f1ab86;
-    text-decoration: none;
-}
-
-.media ul {
-  position: absolute;
-    bottom: 350px;
-    left: -100px;
-    transform: rotate(-90deg);
-    z-index: 1;
-    list-style: none;
-}
-
-.media ul li{
-    letter-spacing: 2px;
-    display: inline-block;
-    text-decoration: none;
-    padding: 0 30px;
-    color: #f1ab86;
-    font-size: 20px;
-}
-
 /*IMAGE HOVER CHANGE*/
 #imageChange {
   height:281px;
@@ -385,11 +353,12 @@ video{
     position: absolute;
     transform: translate(-40%, -40%);
 }
-*/
+
 
 .cursor-grow{
     transform: scale(1.5);
 }
+*/
 
 .mobile ul li a{
     color: #f1ab86;
@@ -415,7 +384,6 @@ video{
     font-size: 20px;
     font-weight: 200;
     color: #f1ab86;
-    
 }
 
 
@@ -434,7 +402,7 @@ video{
 
 /* TEXT
 =========================== */
-.text {
+/*.text {
   position: absolute;
   top: 200px;
   left: 100px;
@@ -449,7 +417,7 @@ video{
   margin-bottom: 20px;
     color: #B1DECA;
   position: relative;
-/*  overflow: hidden;*/
+  overflow: hidden;
   height: 350px;
   width: 600px;
 }
@@ -463,7 +431,7 @@ video{
   top: 40px;
   left: -80px;
   color: #DEF4E2;
-/*  z-index: -1;*/
+  z-index: -1;
   font-size: 150px;
   font-weight: 600;
   letter-spacing: 8px;
@@ -497,7 +465,7 @@ video{
 .text p .hidetext {
   position: absolute;
 }
-
+*/
 
 .resume img {
     width: 100vw;
@@ -691,6 +659,7 @@ video{
 
 /* DISTORTION
 =========================== */
+/*
 .distortion {
   width: 580px;
   height: 720px;
@@ -698,9 +667,11 @@ video{
   right: 300px;
   bottom: 0;
 }
+*/
 
 /* OVERLAY
 =========================== */
+/*
 .overlay {
   position: absolute;
   width: 100%;
@@ -722,128 +693,78 @@ video{
   background: #c57b57;
   left: 66.6%;
 }
+*/
 
 /* MENU
 =========================== */
-.box {
-    height: 100vh;
-    width: 300px;
-    position: absolute;
-    left: -250px;
-    z-index: 5;
-    background: #f1ab86;
-    overflow: hidden;
-    text-align: left;
-  -webkit-transition: -webkit-transform 250ms ease-in-out;
-  transition: transform 250ms ease-in-out;
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
 }
 
-.active {
-    -webkit-transform: translateX(350px);
-    -moz-transform: translateX(350px);
-    -o-transform: translateX(350px);
-    -ms-transform: translateX(350px);
-    transform: translateX(350px);
-    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
-    -moz-box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
-    -webkit-box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
 }
 
-.open-menu {
-    display: inline-block;
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
 }
 
-.open-menu button{
-    display: inline;
-    z-index: 0;
-    background: transparent;
-    border: none;
-    margin-top: 10px;
-    margin-left: 25px;
-    padding: 0px;
-    cursor: pointer;
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
 }
 
-.open-menu img {
-    width: 30px;
-    height: 30px;
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
 }
 
-.header-menu {
-    height: 50px;
-    background: #f1ab86;
-	margin-bottom: 200px;
-}
-
-.header-menu button {
-    position: relative;
-    left: 260px;
-    background: transparent;
-    border: none;
-    margin-top: 10px;
-    padding: 0px;
-    cursor: pointer;
-}
-
-.header-menu img {
-    width: 40px;
-    height: 40px;
-}
-
-.top-menu {
-    margin-top: 35px;
-}
-
-.top-menu a {
-    text-decoration: none;
-    color: black;
-    font-weight: 500;
-    font-size: 16rem;
-    display: block;
-    line-height: 40px;
-    padding-left: 35px;
-	 transition: .2s;
-}
-
-.bottom-menu {
-    position: absolute;
-    bottom: 0px;
-    width: 300px;
-    background: #f1ab86;
+.menu {
+  position: fixed;
+    top: 80%;
+    z-index: 1;
+    list-style: none;
+    left: 45%;
     text-align: center;
+    color: #f1ab86;
+    text-decoration: none;
 }
 
-.bottom-menu li {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 0px;
-    color: black;
-    font-weight: 700;
-    font-size: 13px;
+.menuM {
+  position: fixed;
+    top: 80%;
+    z-index: 1;
+    list-style: none;
+    left: 45%;
+    text-align: center;
+    color: #f1ab86;
+    text-decoration: none;
 }
 
-.text {
-  	font-size: 70rem;
-  	position: absolute;
-   top: 50%;
-   left: 50%;
-	transform: translateX(-50%) translateY(-50%);
-	text-align: center;
-}
-
-/* Misc */
-.box li a{
-    list-style-type: none;
-    padding: 0px 0px 0px 0px;
-    font-size: 20px;
-    color: #B1DECA;
-}
-
-.box ul {
-    padding: 0px;
-    margin: 0px;
-}
-
-.box button:focus {
-    outline: none;
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
 }
