@@ -24,12 +24,6 @@ body{
     display: block;
 }
 
-
-#lang-switch{
-    margin: 5px;
-}
-
-
 .blogImg{
     height: 300px;
     width: 400px;
@@ -54,6 +48,7 @@ a:hover{
     padding: 3% 15%;
 }
 
+/*WRITING*/
 .topics{
     margin-left: 30%;
 }
@@ -90,7 +85,7 @@ a:hover{
 }
 
 
-/*SECTIONS*/
+/*-----------------*/
 
 
 /*Article*/
@@ -126,7 +121,7 @@ a:hover{
 }
 
 video{
-     width: 100%    !important;
+     min-width: 100%    !important;
   height: auto   !important;
     text-align: center;
     
@@ -229,9 +224,8 @@ video{
     
 }
 
-
-
 /* Style the header: fixed position (always stay at the top) */
+/*
 .header {
   position: fixed;
   top: 0;
@@ -239,28 +233,33 @@ video{
   width: 100%;
   background-color: #f1f1f1;
 }
+*/
 
 /* The progress container (grey background) */
+/*
 .progress-container {
   width: 100%;
   height: 8px;
   background: #ccc;
 }
+*/
 
 /* The progress bar (scroll indicator) */
+/*
 .progress-bar {
   height: 8px;
   background: #DEF4E2;
   width: 0%;
 }
+*/
 
 /*LANGUAGE CONTROL*/
+/*
 #lang-switch {
     border-radius: 10px;
     border-color: #DEF4E2;
 }
-
-
+*/
 
 .outer-border {
     height: 667px;
@@ -277,6 +276,7 @@ video{
     width: 300px;
 }
 
+/*MOBILE LINKS PAGE*/
 .link{
     
 }
@@ -400,11 +400,17 @@ video{
     color: #f1ab86;
 }
 
+/* BIO
+=========================== */
+#bio img{
+    width: 350px;
+}
+
 /* RESUME
 =========================== */
 
 .resume img {
-    width: 100vw;
+    width: 75vw;
 }
 
 
@@ -443,7 +449,6 @@ video{
 
 /* Next & previous buttons */
 .prevu, .nextu {
-    color: #DEF4E2;
    position: absolute;
     font-size: 40px;
     font-weight: bold;
@@ -453,9 +458,9 @@ video{
 
 .prevu {
   top: 80%;
-    left: 50%;
+    left: 45%;
   width: auto;
-    transform: rotate(-90deg);
+    transform: rotate(90deg);
 /*  margin-top: -22px;*/
   padding: 16px;
   transition: 0.6s ease;
@@ -466,8 +471,8 @@ video{
 
 .nextu {
   top: 10%;
-    left: 50%;
-    transform: rotate(-90deg);
+    left: 45%;
+    transform: rotate(-180deg);
   width: auto;
   margin-top: -22px;
   padding: 16px;
@@ -481,7 +486,7 @@ video{
   top: 80%;
     left: 0%;
     position: fixed;
-    transform: rotate(-90deg);
+    transform: rotate(180deg);
   width: auto;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
@@ -513,8 +518,6 @@ video{
   font-weight: 900;
   letter-spacing: -7px;
     color: #f1ab86;
-/*  position: relative;*/
-/*  overflow: hidden;*/
   height: 350px;
   width: 100%;
 }
@@ -545,8 +548,6 @@ video{
   font-weight: 800;
   letter-spacing: -7px;
     color: #B1DECA;
-/*  position: relative;*/
-/*  overflow: hidden;*/
   height: 350px;
   width: 100%;
 }
@@ -561,7 +562,8 @@ video{
   text-transform: uppercase;
   font-weight: 800;
   letter-spacing: -7px;
-    color: white;
+    color: #f1ab86;
+    text-decoration: none;
 /*  position: relative;*/
 /*  overflow: hidden;*/
   height: 350px;
@@ -695,7 +697,7 @@ video{
     list-style: none;
     left: 45%;
     text-align: center;
-    color: #f1ab86;
+    color: #B1DECA;
     text-decoration: none;
 }
 
