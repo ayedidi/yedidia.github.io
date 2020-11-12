@@ -360,6 +360,7 @@ video{
 }
 */
 
+/*
 .mobile ul li a{
     color: #f1ab86;
     text-decoration: none;
@@ -385,6 +386,7 @@ video{
     font-weight: 200;
     color: #f1ab86;
 }
+*/
 
 
 .readable {
@@ -540,7 +542,7 @@ video{
 .captionm a{
   padding: 80px 12px;
   position: fixed;
-  bottom: 5%;
+  bottom: -10%;
     right: 0%;
   text-align: center;
   font-size: 70px;
@@ -555,8 +557,8 @@ video{
 .captionm a:hover{
   padding: 80px 12px;
   position: fixed;
-  bottom: 5%;
-    right: 0%;
+  bottom: -10%;
+/*    right: 0%;*/
   text-align: center;
   font-size: 70px;
   text-transform: uppercase;
@@ -692,10 +694,10 @@ video{
 
 .menuM {
   position: fixed;
-    top: 80%;
+    top: 0%;
     z-index: 1;
     list-style: none;
-    left: 45%;
+    left: 0%;
     text-align: center;
     color: #B1DECA;
     text-decoration: none;
