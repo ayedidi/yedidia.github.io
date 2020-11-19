@@ -163,12 +163,22 @@ video{
     padding: 5px 0;
 }
 
-.bodybody h4{
+.yedidia a{
+    color: #f1ab86;
+}
+
+.yedidia a:hover{
+    color: #B1DECA;
+    text-decoration: none;
+}
+
+.bodybody h4, h2{
     padding: 10px 0;
 }
 
-.bodybody h2{
-    padding: 10px 0;
+.green{
+    background-color: #1e352f;
+    color: #fff;
 }
 
 /*PROJECTS BUTTONS*/
@@ -205,6 +215,16 @@ video{
    border-color: #f1ab86; 
 }
 
+/*
+.projects h4, h5{
+    color: #fff;
+}
+*/
+
+.introc h1{
+    color: #fff;
+}
+
 .projects h6{
     color: gray;
 }
@@ -214,6 +234,13 @@ video{
 }
 /*-------------------------*/
 
+
+/*
+.secone{
+    background-color: #f1ab86;
+    position: relative;
+}
+*/
 
 /*TIMELINE*/
 
@@ -300,8 +327,7 @@ video{
     list-style: none;
     margin-top: 10px;
     height: 40px;
-    width: 150px;
-    
+    width: 150px; 
 }
 
 .links a{
@@ -314,7 +340,6 @@ video{
     text-decoration: none;
     color: black;
     background-color: #f1ab86;
-    
 }
 
 .images {
