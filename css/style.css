@@ -441,7 +441,7 @@ video{
 .mobileshow-container {
   height: 80vh;
     width: 80vw;
-    padding-top: 70px;
+    padding-top: 50px;
   position: relative;
   margin: auto;
     background-position: center;
@@ -458,8 +458,8 @@ video{
   background-repeat: no-repeat;
 /*  background-size: cover;*/
     position: fixed;
-  left: 50;
-  bottom: 50;
+  left: 40;
+  bottom: 60;
     overflow-x: hidden;
 /*
   min-width: 100%;
