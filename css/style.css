@@ -148,6 +148,19 @@ video{
 }
 /*-------------------------*/
 
+.bodybo{
+    padding: 10% 10%;
+}
+
+.bodybo img{
+    height: 400px;
+    width: auto;
+}
+
+.margy{
+    padding-top: 50px;
+}
+
 /*CODE*/
 .bodybody{
     padding: 10% 20%;
@@ -161,6 +174,16 @@ video{
 
 .bodybody p{
     padding: 5px 0;
+}
+
+.introVid{
+    height: 100vh;
+    background-color: #1e352f;
+}
+
+.yedidia{
+    margin: -50% 0; 
+    padding: 10%;
 }
 
 .yedidia a{
@@ -385,34 +408,6 @@ video{
 }
 */
 
-/*
-.mobile ul li a{
-    color: #f1ab86;
-    text-decoration: none;
-}
-
-.mobile ul {
-  position: fixed;
-    top: 80%;
-    z-index: 1;
-    list-style: none;
-    left: 20%;
-    text-align: right;
-    
-}
-
-.mobile ul li{
-    letter-spacing: 2px;
-    display: inline-block;
-    text-decoration: none;
-    letter-spacing: -1px;
-    padding: 2% 10%;
-    font-size: 20px;
-    font-weight: 200;
-    color: #f1ab86;
-}
-*/
-
 
 .readable {
     background-color: #f1ab86;
@@ -443,6 +438,35 @@ video{
 
 /** {box-sizing:border-box}*/
 
+.mobileshow-container {
+  height: 80vh;
+    width: 80vw;
+    padding-top: 70px;
+  position: relative;
+  margin: auto;
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.mobileImg {
+    height: 80vh;
+    width: auto;
+    background-position: center;
+  background-repeat: no-repeat;
+/*  background-size: cover;*/
+    position: fixed;
+  left: 50;
+  bottom: 50;
+    overflow-x: hidden;
+/*
+  min-width: 100%;
+  min-height: 100%;
+*/
+}
+
 /* Slideshow container */
 .slideshow-container {
   height: 100vh;
@@ -452,7 +476,8 @@ video{
     background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  overflow-x: scroll;
+  overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .slideImg {
@@ -519,6 +544,7 @@ video{
   border-radius: 0 3px 3px 0;
   user-select: none;
   display: inline;
+    cursor: pointer;
 }
 
 .mobR {
@@ -530,7 +556,7 @@ video{
   transition: 0.6s ease;
   user-select: none;
     display: inline;
-  
+  cursor: pointer;
 }
 
 

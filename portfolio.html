@@ -17,6 +17,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
      <link href="https://fonts.googleapis.com/css?family=Poppins:500,600,700,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slidephoto.css">
     <link rel="icon" href="favicon.ico">
     
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
@@ -28,7 +29,7 @@
 
     
 </head>
-<body class="bodybody green">
+<body class="bodybo green">
    
        <!-- OVERLAY
     =============================== -->
@@ -59,100 +60,133 @@
     
     <!-- image container
     =============================== -->
-    <div class="images container">
+    <div class="images container d-none d-sm-block">
         <div class="row">
-            <div class="col-lg-8 col-md-10">
+            <div class="col-lg-6 col-md-6">
                 <img class="" src="img/mirror.png" alt="">
             </div>
-<!--
-            <div class="col-lg-4 col-md-2">
-                <h4 class="">Mirror</h4>
-            </div>
--->
-        </div>
-        <div class="row">
-            <div class="col-lg-4 col-md-2">
-                <h4 class="whiteText">Fuzzies</h4>
-            </div>
-            <div class="col-lg-8 col-md-10">
-               <div class="d-none d-sm-block">
+            <div class="col-lg-6 col-md-6">
                 <video muted autoplay loop src="videos/fuzzies.mp4"></video>
-                </div>
             </div>
-            <div class="d-block d-sm-none">    
-                 <video controls>
-                  <source src="videos/fuzzies.mp4" type="video/mp4">
-              </video>
-              </div>
         </div>
+        
         <div class="row">
-            <div class="col-lg-8 col-md-10 ">
-               <div class="d-none d-sm-block">
+            <div class="col-lg-6 col-md-6">
+                <img class="" src="img/code.png" alt="">
+            </div>
+
+            <div class="col-lg-6 col-md-6">
                 <video muted autoplay loop src="videos/glow.mp4"></video>
-                </div>
-            </div>
-            <div class="d-block d-sm-none">    
-                 <video controls>
-                  <source src="videos/glow.mp4" type="video/mp4">
-              </video>
-              </div>
-            <div class="col-lg-4 col-md-2">
-                <h4 class="whiteText">Glow</h4>
             </div>
         </div>
+        
         <div class="row">
-            <div class="col-lg-4 col-md-2">
-                <h4 class="whiteText">Snake</h4>
-            </div>
-            <div class="col-lg-8 col-md-10">
-                <img class="img-fluid" src="img/0001%20copy.png" alt="">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-8 col-md-10">
-               <div class="d-none d-sm-block">
+            <div class="col-lg-6 col-md-6">
                 <video muted autoplay loop src="videos/2fairy18.mp4"></video>
-                </div>
             </div>
-            <div class="d-block d-sm-none">    
-                 <video controls>
-                  <source src="videos/2fairy18.mp4" type="video/mp4">
-              </video>
-              </div>
-            <div class="col-lg-4 col-md-2">
-                <h4 class="whiteText">Fairy</h4>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-4 col-md-2">
-                <h4 class="whiteText">Snake</h4>
-            </div>
-            <div class="col-lg-8 col-md-10">
-                <div class="d-none d-sm-block">    
+
+            <div class="col-lg-6 col-md-6">    
                  <video muted autoplay loop >
                   <source src="videos/snake.mp4" type="video/mp4">
               </video>
-              </div>
             </div>
-            <div class="d-block d-sm-none">    
-                 <video controls>
-                  <source src="videos/snake.mp4" type="video/mp4">
-              </video>
+ 
+        </div>
+
+<!--
+<div class="row">
+    <div class="col-lg-6 col-md-6">   
+        <div id="page">
+            <div class="wrappero">
+              <div class="bottom">
+                <img src="img/mirror.png" draggable="false"/>
               </div>
+              <div class="middle">
+                 <img src="img/try6ps%20copy.png" draggable="false"/> 
+              </div>
+          <div class="scroller scroller-middle">
+            <svg class="scroller__thumb" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><polygon points="0 50 37 68 37 32 0 50" style="fill:#FFCCBC"/><polygon points="100 50 64 32 64 68 100 50" style="fill:#FFCCBC"/></svg>
+          </div>
+          <div class="top">
+            <img src="img/wip%20copy.png" draggable="false"/>
+          </div>
+          <div class="scroller scroller-top">
+            <svg class="scroller__thumb" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><polygon points="0 50 37 68 37 32 0 50" style="fill:#FFAB91"/><polygon points="100 50 64 32 64 68 100 50" style="fill:#FFAB91"/></svg>
+         </div>
         </div>
     </div>
-    
-<!--    d-block d-sm-none-->
+    </div>
+</div>
+        
+-->
+    </div>
+  
+ 
+<!--
+  MOBILE SLIDESHOW
+  =============================== 
+-->   
+<div class="mobileshow-container d-block d-sm-none">    
+ 
+   <div class="mySlides">
+    <img class="mobileImg" src="img/try6ps%20copy.png">
+  </div>
+  
+  <div class="mySlides">
+    <video controls muted>
+    <source src="videos/snake.mp4" type="video/mp4">
+        </video>
+  </div>
+  
+  <div class="mySlides">
+    <img class="mobileImg" src="img/mirror.png">
+  </div>
+  
+  <div class="mySlides">
+    <video controls muted>
+    <source src="videos/2fairy18.mp4" type="video/mp4">
+        </video>
+  </div>
+  
+    <div class="mySlides">
+    <img class="mobileImg" src="img/code.png">
+  </div>
+  
+  <div class="mySlides">
+    <video controls muted>
+    <source src="videos/glow.mp4" type="video/mp4">
+        </video>
+  </div>
+  
+  <div class="mySlides">
+    <img class="mobileImg" src="img/try6ps%20copy.png">
+  </div>
+  
 
+  
+</div>
+  
+<!--
+  MOBILE BUTTONS
+  =============================== 
+-->
+ <div> <a class="prev d-block d-sm-none mobL" onclick="plusSlides(-1)"><svg width="5em" height="5em" viewBox="0 0 16 16" class="bi bi-caret-up" fill="#B1DECA" xmlns="http://www.w3.org/2000/svg">
+  <path d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+</svg>
+ </a>
+  <a class="next d-block d-sm-none mobR" onclick="plusSlides(1)"><svg width="5em" height="5em" viewBox="0 0 16 16" class="bi bi-caret-down" fill="#B1DECA" xmlns="http://www.w3.org/2000/svg">
+  <path d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+</svg>
+    </a>
+</div>
 
-
-             
-                     
+</div>                     
 
     </div>
-        </div>
+
     
-  <script src="js/slide.js" charset="utf-8"></script>  
+  <script src="js/slide.js" charset="utf-8"></script> 
+<script src="js/slidephoto.js"> 
 
         
      <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js" integrity="sha512-HzAEuXwhLxwm/Jj+5ecdjzrRVrjuh2ZeIxyT1Ln37TO5pWNMnKBuU7cfd1wvRQ/k86w1oC174Yk1T7aRlBpIcA==" crossorigin="anonymous"></script>
