@@ -109,12 +109,39 @@
    </div>
     
   <div class="mySlides">
+<!--
    <div id="imageChange">
         <a href="portfolio.html"><img class="bottom slideImg d-none d-sm-block" src="img/code2.png"></a>
         <a href="portfolio.html"><img class="top slideImg d-none d-sm-block" src="img/portfolio.png"></a>
     </div>
+-->
+    
+        <div class="toggles d-none d-sm-block">
+        <p>
+  <button class="btn btn-primary" href="#artSect" role="button" data-toggle="collapse" data-target="#artSect"  aria-expanded="false" aria-controls="artSect">
+    Highlights
+  </button>
+  <button class="btn btn-primary" href="#coolOff" role="button" data-toggle="collapse" data-target="#coolOff" aria-expanded="false" aria-controls="coolOff">
+    Cool Off
+  </button>
+
+  <a class="btn btn-primary" href="portfolio.html" role="button"  aria-expanded="false">
+    Full Portfolio
+  </a>
+</p>
+<div class="collapse multi-collapse" id="artSect">
+  <div class="">
+    <img class="backImg" src="img/lumystic%20banner.png" alt="">
+  </div>
+</div>
+<div class="collapse multi-collapse" id="coolOff">
+  <div class="card card-body">
+    <video src=""></video>
+  </div>
+</div>        
+    </div>
+    
     <a href="portfolio.html"><img class="slideImg d-block d-sm-none" src="img/wip%20copy.png"></a>
-    <div class="caption d-none d-sm-block"><a href="portfolio.html">PORTFOLIO</a></div>
     <div class="d-block d-sm-none captionm"><a href="portfolio.html">ART</a></div>
   </div>
   
@@ -137,9 +164,44 @@
   </div>
   
   <div class="mySlides">
-    <a href="code.html"><img class="slideImg d-none d-sm-block" src="img/code2.png"></a>
+<!--    <a href="code.html"><img class="slideImg d-none d-sm-block" src="img/code2.png"></a>-->
+    <div class="toggles d-none d-sm-block">
+        <p>
+  <button class="btn btn-primary" href="#lumystic" role="button" data-toggle="collapse" data-target="#lumystic"  aria-expanded="false" aria-controls="lumystic">
+    Lumystic
+  </button>
+  <button class="btn btn-primary" href="#esteria" role="button" data-toggle="collapse" data-target="#esteria" aria-expanded="false" aria-controls="esteria">
+    Esteria
+  </button>
+<!--
+  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+    Other
+  </button>
+-->
+  <a class="btn btn-primary" href="code.html" role="button"  aria-expanded="false">
+    All Projects
+  </a>
+</p>
+<div class="collapse multi-collapse" id="lumystic">
+  <div class="">
+    
+    <img class="backImg" src="img/lumystic%20banner.png" alt="">
+  </div>
+</div>
+<div class="collapse multi-collapse" id="esteria">
+  <div class="card card-body">
+    <img class="backImg" src="img/Esteria.jpg" alt="">
+  </div>
+</div>
+<div class="collapse" id="collapseExample">
+  <div class="card card-body">
+    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+  </div>
+</div>
+        
+    </div>
+    
     <a href="code.html"><img class="slideImg d-block d-sm-none" src="img/code.png"></a>
-    <div class="caption d-none d-sm-block"><a href="code.html">PROJECTS</a></div>
     <div class="d-block d-sm-none captionm"><a href="code.html">CODE</a></div>
   </div>
   
@@ -179,7 +241,7 @@
         </div>
 
   <script src="js/slide.js" charset="utf-8"></script>  
-
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> 
 
          
            

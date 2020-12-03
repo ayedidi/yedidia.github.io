@@ -195,6 +195,11 @@ video{
     text-decoration: none;
 }
 
+.toggles{
+    margin-top: 10%;
+    margin-left: 10%;
+}
+
 .bodybody h4, h2{
     padding: 10px 0;
 }
@@ -465,6 +470,25 @@ video{
   min-width: 100%;
   min-height: 100%;
 */
+}
+
+.backImg {
+    height: 80vh;
+    width: auto;
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+/*    position: fixed;*/
+/*
+  right: 0;
+  bottom: 0;
+*/
+    overflow-x: hidden;
+/*
+  min-width: 100%;
+  min-height: 100%;
+*/
+    z-index: 0;
 }
 
 /* Slideshow container */
