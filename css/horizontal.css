@@ -43,7 +43,7 @@ body {
 }
 
 .three {
-    background: #bb3b0e;
+    background: linear-gradient(to right, #B1DECA, #B1DECA 50%, #DEF4E2 75%, #DEF4E2 75%);
 }
 
 .four {
@@ -54,37 +54,6 @@ body {
     color: #fff;
 }
 
-#lang-switch {
-    border-radius: 10px;
-    border-color: aqua;
-    background-color: lightcoral;
-}
-
-/*ARROWS*/
-.arrowUp {
-    position: fixed;
-    top: 5%;
-    left: 11%;
-}
-
-.arrowDown {
-    top: 85%;
-    left: 11%;
-    position: fixed;
-}
-
-arrowRight {
-    top: 55%;
-    left: 0%;
-    position: static;
-}
-
-arrowLeft {
-    align-content: center;
-    top: 55%;
-    left: 11%;
-    position: fixed;
-}
 
 
 /*ARROWS*/
@@ -146,29 +115,3 @@ transform: translate(-50%, -50%);
 }
 
 
-.media ul li a:hover{
-    color: #DEF4E2;
-    text-decoration: none;
-}
-
-.media ul li a{
-    color: #B1DECA;
-    text-decoration: none;
-}
-
-.media ul {
-  position: absolute;
-    bottom: 350px;
-    left: -140px;
-    transform: rotate(-90deg);
-    z-index: 1;
-    list-style: none;
-}
-
-.media ul li{
-    letter-spacing: 2px;
-    display: inline-block;
-    text-decoration: none;
-    padding: 0 30px;
-    color: #DEF4E2;
-}
