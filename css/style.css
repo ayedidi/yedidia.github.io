@@ -58,6 +58,25 @@ a:hover{
     text-align: right;
 }
 
+.snips-buttons-link a{
+    background-color: #f1ab86;
+    font-size: 18px;
+    border-color: transparent;
+    padding-right: 10px;
+    border-style: double;
+    line-height: 1;
+  text-align: center;
+  color: #335145;
+}
+
+.snips-buttons-link a:hover{
+   background-color: #f7dba7;
+    border-color: transparent;
+    color: #335145;
+    text-decoration-style: none;
+}
+
+
 .snips button{
     background-color: transparent;
     font-size: 18px;
@@ -77,6 +96,7 @@ a:hover{
     text-decoration-style: dashed;
 }
 
+/*
 .snips a{
     background-color: transparent;
     font-size: 18px;
@@ -95,6 +115,7 @@ a:hover{
     color: #335145;
     text-decoration-style: none;
 }
+*/
 
 
 /*WRITING*/
@@ -539,22 +560,25 @@ video{
 }
 
 .backImg {
-    height: 80vh;
-    width: auto;
+    height: 100vh;
+    width: 110vw;
+    margin-top: -100px;
     background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 /*    position: fixed;*/
-/*
-  right: 0;
-  bottom: 0;
-*/
+    min-width: 100%;
     overflow-x: hidden;
 /*
   min-width: 100%;
   min-height: 100%;
 */
-    z-index: 0;
+   display: block;
+    left: 0;
+    top: 0;
+  margin-left: -150px;
+/*  margin-right: auto;*/
+/*  width: 60%;*/
 }
 
 /* Slideshow container */
