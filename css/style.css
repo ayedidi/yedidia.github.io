@@ -48,6 +48,55 @@ a:hover{
     padding: 3% 15%;
 }
 
+/*SNIPPETS
+*/
+.snips{
+    margin-top: 0%;
+}
+
+.snips-buttons{
+    text-align: right;
+}
+
+.snips button{
+    background-color: transparent;
+    font-size: 18px;
+    border-color: transparent;
+    padding-right: 10px;
+    border-style: double;
+    line-height: 1;
+  text-align: center;
+  color: #f1ab86;
+  text-decoration-style: dashed;
+}
+
+.snips button:hover{
+    background-color: #f7dba7;
+    border-color: transparent;
+    color: #335145;
+    text-decoration-style: dashed;
+}
+
+.snips a{
+    background-color: transparent;
+    font-size: 18px;
+    border-color: transparent;
+    padding-right: 10px;
+    border-style: double;
+    line-height: 1;
+  text-align: center;
+  color: #f1ab86;
+  text-decoration-style: dashed;
+}
+
+.snips a:hover{
+    background-color: #f7dba7;
+    border-color: transparent;
+    color: #335145;
+    text-decoration-style: none;
+}
+
+
 /*WRITING*/
 .topics{
     margin-left: 30%;
@@ -375,9 +424,19 @@ video{
 }
 
 .images .row{
-     margin: 20px;
+     margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+/*    padding: 10px;*/
+    display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+.images .col-md-10{
     text-align: center;
     padding: 10px;
+    flex: 50%;
+  padding: 0 4px;
 }
 
 /*CURSOR*/
@@ -412,6 +471,13 @@ video{
     transform: scale(1.5);
 }
 */
+
+.grow { 
+    transition: all .2s ease-in-out; 
+}
+.grow:hover {
+    transform: scale(1.1); 
+}
 
 
 .readable {

@@ -26,6 +26,33 @@ $(function() {
 //    stop;
 //}); 
 
+$(".portOne").click(function() {
+    $(".portfOne").show();
+    $(".portfTwo").hide();
+    
+});
+
+$(".portTwo").click(function() {
+    $(".portfOne").hide();
+    $(".portfTwo").show();
+    
+});
+
+$(".codOne").click(function() {
+    $(".codeOne").show();
+    $(".codeTwo").hide();
+    
+});
+
+$(".codTwo").click(function() {
+    $(".codeOne").hide();
+    $(".codeTwo").show();
+    
+});
+
+
+
+
 $(".developer").click(function() {
     $(".devs").show();
     $(".anim").hide();
@@ -79,6 +106,7 @@ $(".all").click(function() {
     $(".idSex").show();
     
 });
+
 
 $(".readable").click(function() {
     document.body.style.backgroundColor = "#c57b57";
