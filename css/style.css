@@ -73,7 +73,7 @@ a:hover{
    background-color: #f7dba7;
     border-color: transparent;
     color: #335145;
-    text-decoration-style: none;
+    text-decoration: none;
 }
 
 
@@ -561,22 +561,20 @@ video{
 
 .backImg {
     height: 100vh;
-    width: 110vw;
-    margin-top: -100px;
+    width: 100vw;
+    margin-top: -90px;
     background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 /*    position: fixed;*/
-    min-width: 100%;
     overflow-x: hidden;
-/*
+    overflow-y: hidden;
   min-width: 100%;
   min-height: 100%;
-*/
    display: block;
     left: 0;
     top: 0;
-  margin-left: -150px;
+  margin-left: -100px;
 /*  margin-right: auto;*/
 /*  width: 60%;*/
 }
