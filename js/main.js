@@ -50,6 +50,31 @@ $(".codTwo").click(function() {
     
 });
 
+$(".stil").click(function() {
+    $(".stills").show();
+    $(".loops").hide();
+    $(".artvid").hide();
+});
+
+$(".loo").click(function() {
+    $(".stills").hide();
+    $(".loops").show();
+    $(".artvid").hide(); 
+});
+
+$(".artvi").click(function() {
+    $(".stills").hide();
+    $(".loops").hide();
+    $(".artvid").show();
+});
+
+$(".allar").click(function() {
+    $(".stills").show();
+    $(".loops").show();
+    $(".artvid").show();
+    
+});
+
 
 
 
