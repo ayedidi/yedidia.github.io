@@ -8,15 +8,6 @@ $(function() {
     box.toggleClass('active');
   });
 });
-//
-//$(".devs").hide();
-//$("#journey").hide();
-//
-//
-//$(".journey").click(function() {
-//    $("#journey").show();
-////    $(".journey").hide();
-//});
 
 //$(".video").on("mouseover", function() {
 //    play;
@@ -50,6 +41,8 @@ $(".codTwo").click(function() {
     
 });
 
+
+
 $(".stil").click(function() {
     $(".stills").show();
     $(".loops").hide();
@@ -72,7 +65,6 @@ $(".allar").click(function() {
     $(".stills").show();
     $(".loops").show();
     $(".artvid").show();
-    
 });
 
 
