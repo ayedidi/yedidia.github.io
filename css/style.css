@@ -97,6 +97,12 @@ a:hover{
     text-decoration-style: dashed;
 }
 
+.porfo {
+    width: 100%    !important;
+  height: auto   !important;
+    text-align: center;
+}
+
 /*
 .snips a{
     background-color: transparent;
