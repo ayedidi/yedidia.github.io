@@ -1,13 +1,7 @@
 // add an onload method that alert's the user to turn on javascript if it's off
 //onload methods to start up things
 
-$(function() {
-  var box = $('.box');
-  var button = $('.open-menu, .header-menu');
-  button.on('click', function(){
-    box.toggleClass('active');
-  });
-});
+
 
 //$(".video").on("mouseover", function() {
 //    play;
