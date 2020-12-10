@@ -17,18 +17,18 @@ $(function() {
 //    stop;
 //}); 
 
-$(".portOne").click(function() {
-    $(".portfOne").show();
-    $(".portfTwo").hide();
-    
-});
-
-$(".portTwo").click(function() {
-    $(".portfOne").hide();
-    $(".portfTwo").show();
-    
-});
-
+//$(".portOne").click(function() {
+//    $(".portfOne").show();
+//    $(".portfTwo").hide();
+//    
+//});
+//
+//$(".portTwo").click(function() {
+//    $(".portfOne").hide();
+//    $(".portfTwo").show();
+//    
+//});
+//
 $(".codOne").click(function() {
     $(".codeOne").show();
     $(".codeTwo").hide();
