@@ -48,6 +48,13 @@ a:hover{
     padding: 3% 15%;
 }
 
+.still-image{
+    padding-top: 10px;
+}
+
+.animated-loop{
+    padding-top: 10px;
+}
 /*SNIPPETS
 */
 .snips{
