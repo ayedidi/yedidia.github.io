@@ -39,23 +39,34 @@ $(".codTwo").click(function() {
 
 $(".stil").click(function() {
     $(".stills").show();
+    $(".chara").hide();
+    $(".loops").hide();
+    $(".artvid").hide();
+});
+
+$(".char").click(function() {
+    $(".stills").hide();
+    $(".chara").show();
     $(".loops").hide();
     $(".artvid").hide();
 });
 
 $(".loo").click(function() {
     $(".stills").hide();
+    $(".chara").hide();
     $(".loops").show();
     $(".artvid").hide(); 
 });
 
 $(".artvi").click(function() {
     $(".stills").hide();
+    $(".chara").hide();
     $(".loops").hide();
     $(".artvid").show();
 });
 
 $(".allar").click(function() {
+    $(".chara").show();
     $(".stills").show();
     $(".loops").show();
     $(".artvid").show();
@@ -127,6 +138,7 @@ $(".readable").click(function() {
 $(".white").click(function() {
     document.body.style.backgroundColor = "white";
 });
+
 
 
 // When the user scrolls the page, execute myFunction
