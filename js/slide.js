@@ -27,13 +27,6 @@ function showSlides(n) {
 
 showSlides();
 
-function openNav() {
-  document.getElementById("myNav").style.width = "100%";
-}
-
-function closeNav() {
-  document.getElementById("myNav").style.width = "0%";
-}
 
 //let mouseCursor = document.querySelector(".cursor");
 //let links = document.querySelectorAll(".link");
