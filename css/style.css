@@ -45,7 +45,7 @@ a:hover{
 }
 
 .container{
-    padding: 3% 15%;
+/*    padding: 3% 15%;*/
 }
 
 .still-image{
@@ -104,11 +104,29 @@ a:hover{
     text-decoration-style: dashed;
 }
 
+/*
 .porfo {
     width: 100%    !important;
   height: auto   !important;
     text-align: center;
 }
+*/
+
+.half{
+/*    margin-left: -100px;*/
+}
+
+/*
+.halfl{
+    height: 100vh;
+    background-size: 50% 100%;
+    width: 50vw;
+    top: 0;
+    left: 0;
+    background-size: contain;
+}
+*/
+
 
 /*
 .snips a{
@@ -130,6 +148,8 @@ a:hover{
     text-decoration-style: none;
 }
 */
+
+
 
 
 /*WRITING*/
@@ -232,6 +252,36 @@ video{
 }
 /*-------------------------*/
 
+.overlayy {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #335145;
+}
+
+.overy:hover .overlayy {
+  opacity: .75;
+}
+
+.text {
+  color: white;
+  font-size: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
 .bodybo{
     padding: 10% 10%;
 }
@@ -260,10 +310,13 @@ video{
     padding: 5px 0;
 }
 
+/*
 .introVid{
     height: 100vh;
     background-color: #1e352f;
 }
+*/
+
 
 .yedidia{
     padding: 10%;
@@ -476,16 +529,12 @@ video{
     margin-right: 20px;
 /*    margin-top: 15%;*/
     text-align: center;
-/*    padding: 10px;*/
+    padding: 10px;
     display: flex;
   flex-wrap: wrap;
   padding: 0 4px;
 }
 
-.chara .col-md-10{
-    margin-top: 15%;
-    
-}
 .images .col-md-10{
     text-align: center;
     padding: 10px;
