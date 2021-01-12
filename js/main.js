@@ -37,39 +37,28 @@ $(".codTwo").click(function() {
 
 
 
-$(".stil").click(function() {
-    $(".stills").show();
-    $(".chara").hide();
+$(".wor").click(function() {
+    $(".work").show();
+    $(".stills").hide();
     $(".loops").hide();
-    $(".artvid").hide();
 });
 
-$(".char").click(function() {
-    $(".stills").hide();
-    $(".chara").show();
+$(".stil").click(function() {
+    $(".work").hide();
+    $(".stills").show();
     $(".loops").hide();
-    $(".artvid").hide();
 });
 
 $(".loo").click(function() {
+    $(".work").hide();
     $(".stills").hide();
-    $(".chara").hide();
     $(".loops").show();
-    $(".artvid").hide(); 
-});
-
-$(".artvi").click(function() {
-    $(".stills").hide();
-    $(".chara").hide();
-    $(".loops").hide();
-    $(".artvid").show();
 });
 
 $(".allar").click(function() {
-    $(".chara").show();
+    $(".work").show();
     $(".stills").show();
     $(".loops").show();
-    $(".artvid").show();
 });
 
 

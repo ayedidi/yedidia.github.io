@@ -104,28 +104,33 @@ a:hover{
     text-decoration-style: dashed;
 }
 
-/*
-.porfo {
-    width: 100%    !important;
-  height: auto   !important;
-    text-align: center;
+/*CARDS FOR CODE*/
+.card{
+    height: 75vh;
+    width: 35rem;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0 0 50px rgba(0, 0, 0, 0.2);
+    border-radius: 100px;
+    padding: 0rem 2rem;
+    display: flex;
 }
-*/
 
-.half{
-/*    margin-left: -100px;*/
+.cardContainer{
+    display: flex;
+    align-content: center;
+    justify-content: center;
 }
 
-/*
-.halfl{
-    height: 100vh;
-    background-size: 50% 100%;
-    width: 50vw;
-    top: 0;
-    left: 0;
-    background-size: contain;
+.cardImg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-*/
+
+.cardImg img{
+}
+
 
 
 /*
@@ -233,18 +238,18 @@ video{
 
 /*IMAGE HOVER CHANGE*/
 #imageChange {
-  height:281px;
-  width:450px;
-  margin:0 auto;
+  height: 400px;
+  width: auto;
+/*  margin:0 auto;*/
 }
 
 #imageChange img {
   position:absolute;
   left:0;
-  -webkit-transition: opacity 1s ease-in-out;
-  -moz-transition: opacity 1s ease-in-out;
-  -o-transition: opacity 1s ease-in-out;
-  transition: opacity 1s ease-in-out;
+  -webkit-transition: opacity .75s ease-in-out;
+  -moz-transition: opacity .75s ease-in-out;
+  -o-transition: opacity .75s ease-in-out;
+  transition: opacity .75s ease-in-out;
 }
 
 #imageChange img.top:hover {
@@ -297,7 +302,7 @@ video{
 
 /*CODE*/
 .bodybody{
-    padding: 10% 20%;
+    padding: 50px 10%;
 }
 
 .bodybody img{
