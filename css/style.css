@@ -449,12 +449,14 @@ h2{
         background-size: cover;
 }
 }
-/*
-.secone{
-    background-color: #f1ab86;
-    position: relative;
+
+/*LOADING ANIMATION*/
+.scene, loading {
+    position: absolute;
+    width: 100%;
+    height: 100%;
 }
-*/
+
 
 /*TIMELINE*/
 
