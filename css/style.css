@@ -88,11 +88,12 @@ main{
     margin: 1rem;
 }
 
-.appStore{
+.backToArtist{
     background: linear-gradient(to right top,#f7dba7, #f1ab86);
     border-radius: 2rem;
 }
 
+/*
 .status{
     margin-bottom: 3rem;
 }
@@ -104,10 +105,11 @@ main{
     padding: 0.5rem;
     border-radius: 2rem;
 }
+*/
 
 /*CARDS FOR CODE*/
 .cardi{
-    height: 70vh;
+    height: 80vh;
     width: 35rem;
     align-items: center;
     justify-content: center;
