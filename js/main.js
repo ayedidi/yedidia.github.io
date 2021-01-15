@@ -23,15 +23,30 @@
 //    
 //});
 //
-$(".codOne").click(function() {
-    $(".codeOne").show();
-    $(".codeTwo").hide();
+//$(function() {
+//    $(".parfait").show();
+//    $(".esteria").hide();
+//    $(".therap").hide();
+//});
+
+$(".parfai").click(function() {
+    $(".parfait").show();
+    $(".esteria").hide();
+    $(".therap").hide();
     
 });
 
-$(".codTwo").click(function() {
-    $(".codeOne").hide();
-    $(".codeTwo").show();
+$(".esteri").click(function() {
+    $(".parfait").hide();
+    $(".esteria").show();
+    $(".therap").hide();
+    
+});
+
+$(".thera").click(function() {
+    $(".parfait").hide();
+    $(".esteria").hide();
+    $(".therap").show();
     
 });
 

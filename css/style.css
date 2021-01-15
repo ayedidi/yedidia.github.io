@@ -83,27 +83,39 @@ main{
 
 .games{
     flex: 2;
+    display: flew;
+    flex-direction: column;
+    margin: 1rem;
 }
 
 .appStore{
     background: linear-gradient(to right top,#f7dba7, #f1ab86);
     border-radius: 2rem;
-    
+}
+
+.status{
+    margin-bottom: 3rem;
+}
+
+.status input{
+    background: linear-gradient(to right bottom, rgba(255,255,255,0.7), rgba(255,255,255,0.1));
+    border: none;
+    width: 50%;
+    padding: 0.5rem;
+    border-radius: 2rem;
 }
 
 /*CARDS FOR CODE*/
-/*
-.card{
-    height: 60vh;
+.cardi{
+    height: 70vh;
     width: 35rem;
     align-items: center;
     justify-content: center;
     box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
-    border-radius: 100px;
+    border-radius: 30px;
     padding: 0rem 2rem;
     display: flex;
 }
-*/
 
 .cardContainer{
     display: flex;
@@ -115,13 +127,41 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
-    object-fit: cover;
+/*    object-fit: cover;*/
 }
 
 .cardImg img{
 }
 
+.project{
+    background: linear-gradient(to right bottom, rgba(255,255,255,0.6), rgba(255,255,255,0.2));
+    border-radius: 1rem;
+    padding: .5rem;
+    margin: 2rem 0rem;
+    box-shadow: 6px 6px 20px rgba(122,122,122,0.2);
+}
 
+.progress{
+    background: linear-gradient(to right top,#f7dba7, #f1ab86);
+    width: 100%;
+    height: 25%;
+    border-radius: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.progress::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgb(236, 236, 236);
+    position: absolute;
+    left: 20%;
+}
+
+.percentage{
+    font-weight: bold;
+}
 
 /*---------------------CODE*/
 
