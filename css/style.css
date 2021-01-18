@@ -107,6 +107,15 @@ main{
 }
 */
 
+@media screen and (min-width:768px)
+{
+    .cardi, .dashboard{
+    height: 80vh;
+    width: 100%;
+        background-size: cover;
+}
+}
+
 /*CARDS FOR CODE*/
 .cardi{
     height: 80vh;
@@ -477,46 +486,6 @@ video{
     height: 100vh;
     width: 100vw;
 }
-
-/*PROJECTS BUTTONS*/
-.roles a{
-    border-radius: 10px;
-    padding: 4px;
-    margin: 0 5px;
-    
-}
-
-.roles a:hover{
-    border-radius: 10px;
-    padding: 4px;
-    margin: 0 5px;
-    color: #fff;
-    text-decoration: none;
-}
-
-.pm{
-    background-color: #FCDFA4;
-    color: #335145;
-   border-color: #FCDFA4;
-}
-
-.iD{
-    background-color: #335145;
-    color: white;
-   border-color: #335145;
-}
-
-.cd{
-    background-color: #f1ab86;
-    color: #335145;
-   border-color: #f1ab86; 
-}
-
-
-.introc h1{
-    color: #fff;
-}
-
 
 /*-------------------------*/
 h2{
