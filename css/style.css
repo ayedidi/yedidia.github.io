@@ -376,7 +376,7 @@ video{
 #imageChange {
   height: 400px;
   width: auto;
-  margin: 10px auto;
+  padding: 10px auto;
 }
 
 #imageChange img {
@@ -647,6 +647,10 @@ h2{
     padding: 10px;
     flex: 50%;
   padding: 0 4px;
+}
+
+.images img{
+    padding: 10px;
 }
 
 /*CURSOR*/
