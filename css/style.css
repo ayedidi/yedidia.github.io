@@ -376,7 +376,7 @@ video{
 #imageChange {
   height: 400px;
   width: auto;
-/*  margin:0 auto;*/
+  margin: 10px auto;
 }
 
 #imageChange img {
