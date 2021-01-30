@@ -47,6 +47,7 @@ main{
     z-index: 3;
     margin: auto;
     display: flex;
+      flex-direction: row;
 }
 
 .circle1, .circle2{
@@ -92,6 +93,26 @@ main{
     background: linear-gradient(to right top,#f7dba7, #f1ab86);
     border-radius: 2rem;
 }
+
+.cardi{
+      display: flex;
+  flex-direction: row;
+}
+
+@media (max-width: 800px) {
+  .glass, .cardi, .projects {
+    flex-direction: column;
+  }
+   .glass {
+    width: 80vw;
+  }
+    .projects{
+        flex-direction: row;
+    }
+    
+}
+
+
 
 /*
 .status{
@@ -381,7 +402,7 @@ video{
 
 #imageChange img {
   position:absolute;
-  left:0;
+/*  left:0;*/
   -webkit-transition: opacity .75s ease-in-out;
   -moz-transition: opacity .75s ease-in-out;
   -o-transition: opacity .75s ease-in-out;
@@ -488,7 +509,7 @@ video{
 }
 
 /*-------------------------*/
-h2{
+.introSplit h2{
     color: #fff;
 }
 
@@ -503,7 +524,7 @@ h2{
 }
 
 .leftside{
-    background-image: url(../img/0001%20copy.png);
+    background-image: url(../img/1.8.21%20copy.png);
 }
 
 .rightside{
