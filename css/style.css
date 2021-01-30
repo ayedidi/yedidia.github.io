@@ -531,6 +531,13 @@ video{
     background-image: url(../img/code.png);
 }
 
+@media (max-width: 800px) {
+  .leftside, .rightside {
+    width: 100vw;
+  }
+    
+}
+
 @media screen and (min-width:768px)
 {
     .leftside, .rightside{
