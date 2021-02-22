@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Poppins';
+    font-family: 'Montserrat', sans-serif;
     font-weight: 100;
     color: black;
     
@@ -509,6 +509,12 @@ video{
     width: 100vw;
 }
 
+/*
+.accordion .accordion-flush{
+    transform: rotate(90deg);
+}
+*/
+
 /*-------------------------*/
 .introSplit h2{
     color: #fff;
@@ -517,10 +523,11 @@ video{
 
 .introSplit a:hover{
     text-decoration: none;
+    color: #FCDFA4;
 }
 
 .leftside, .rightside{
-    height: 50vh;
+    
     width: 100%;
     padding: 0;
     margin: 0;
@@ -529,11 +536,21 @@ video{
 }
 
 .leftside{
-    background-image: url(../img/1.8.21%20copy.png);
+    height: 60vh;
+}
+
+.leftside a{
+    color: #f1ab86;
 }
 
 .rightside{
-    background-image: url(../img/code.png);
+    height: 40vh;
+/*    background-image: url(../img/code.png);*/
+}
+
+.rightside img{
+    height: 200px;
+    width: 300px;
 }
 
 @media (max-width: 800px) {
