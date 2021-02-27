@@ -31,22 +31,33 @@
 
 $(".parfai").click(function() {
     $(".parfait").show();
-    $(".esteria").hide();
-    $(".therap").hide();
+    $(".coolOff").hide();
+    $(".3dart").hide();
+    $(".faceFilter").hide();
     
 });
 
-$(".esteri").click(function() {
+$(".cool").click(function() {
     $(".parfait").hide();
-    $(".esteria").show();
-    $(".therap").hide();
+    $(".coolOff").show();
+    $(".3dart").hide();
+    $(".faceFilter").hide();
     
 });
 
-$(".thera").click(function() {
+$(".3dar").click(function() {
     $(".parfait").hide();
-    $(".esteria").hide();
-    $(".therap").show();
+    $(".coolOff").hide();
+    $(".3dart").show();
+    $(".faceFilter").hide();
+    
+});
+
+$(".face").click(function() {
+    $(".parfait").hide();
+    $(".coolOff").hide();
+    $(".3dart").hide();
+    $(".faceFilter").show();
     
 });
 

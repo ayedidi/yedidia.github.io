@@ -42,7 +42,7 @@ main{
     background: white;
     min-height: 80vh;
     width: 70%;
-    background: linear-gradient(to right bottom, rgba(255,255,255,0.8), rgba(255,255,255,0.3));
+    background: linear-gradient(to right bottom, rgba(170,218,217,0.8), rgba(255,255,255,0.3));
     border-radius: 30px;
     z-index: 3;
     margin: auto;
@@ -50,6 +50,7 @@ main{
       flex-direction: row;
 }
 
+/*
 .circle1, .circle2{
     background: white;
     background: linear-gradient(to right bottom, rgba(255,255,255,0.8), rgba(255,255,255,0.1));
@@ -70,6 +71,7 @@ main{
     top: 5%;
     right: 10%;
 }
+*/
 
 .dashboard{
     flex: 1;
@@ -78,20 +80,21 @@ main{
     align-items: center;
     justify-content: space-evenly;
     text-align: center;
-    background: linear-gradient(to right bottom, rgba(255,255,255,0.7), rgba(255,255,255,0.1));
+    background: linear-gradient(to right bottom, rgba((255,255,255,0.7), rgba((255,255,255,0.1));
     border-radius: 30px;
 }
 
 .games{
     flex: 2;
-    display: flew;
+    display: flex;
     flex-direction: column;
     margin: 1rem;
 }
 
-.backToArtist{
-    background: linear-gradient(to right top,#f7dba7, #f1ab86);
+.projectButton{
+/*    background: linear-gradient(to right top,#f7dba7, #f1ab86);*/
     border-radius: 2rem;
+    border-style: none;
 }
 
 .cardi{
@@ -468,12 +471,10 @@ video{
 
 
 
-/*
 .introVid{
     height: 100vh;
     background-color: #1e352f;
 }
-*/
 
 
 .yedidia{
@@ -532,11 +533,6 @@ video{
     color: #fff;
 }
 
-
-.introSplit a:hover{
-    text-decoration: none;
-    color: #FCDFA4;
-}
 
 .leftside, .rightside{
     
