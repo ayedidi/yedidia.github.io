@@ -29,6 +29,13 @@
 //    $(".therap").hide();
 //});
 
+$(document).ready(function(){
+    $(".parfait").show();
+    $(".coolOff").hide();
+    $(".3dart").hide();
+    $(".faceFilter").hide();
+})
+
 $(".parfai").click(function() {
     $(".parfait").show();
     $(".coolOff").hide();
