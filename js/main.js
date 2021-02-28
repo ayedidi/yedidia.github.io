@@ -98,11 +98,11 @@ $(".loo").click(function() {
     $(".loops").show();
 });
 
-//$(".allar").click(function() {
-//    $(".work").show();
-//    $(".stills").show();
-//    $(".loops").show();
-//});
+$(".allar").click(function() {
+    $(".work").show();
+    $(".stills").show();
+    $(".loops").show();
+});
 
 
 
