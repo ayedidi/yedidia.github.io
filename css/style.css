@@ -51,6 +51,7 @@ body{
     margin: auto;
     display: flex;
       flex-direction: row;
+    box-shadow: 0 0px 20px 0 rgba(0,0,0,0.2);
 }
 
 .dashboard{
@@ -62,6 +63,7 @@ body{
     text-align: center;
     background: linear-gradient(to right bottom, rgba(255,255,255,0.7), rgba(255,255,255,0.2));
     border-radius: 30px;
+    box-shadow: 0 0px 20px 0 rgba(0,0,0,0.2);
 }
 
 .projectCards{
@@ -73,10 +75,21 @@ body{
 
 .projectButton{
     background: linear-gradient(to right top,#f7dba7, #f1ab86);
-    border-radius: 2rem;
+    border-radius: 1rem;
     border-style: none;
     width: 8rem;
     margin: 5px;
+    color: #fff;
+}
+
+.projectButton a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.projectButton a:hover{
+    text-decoration: none;
+    color: #fff;
 }
 
 .pro{
@@ -96,12 +109,22 @@ body{
 }
 
 .card{
-/*   background: linear-gradient(to right bottom, rgba(255,255,255,0.8), rgba(255,255,255,0.4));*/
-    background-color: rgba(255,255,255,0.8);
-    box-shadow: 0 0px 20px 0 rgba(0,0,0,0.2);
+   background: linear-gradient(to right bottom, rgba(255,255,255,0.8), rgba(255,255,255,0.4)) !important;
+/*    background-color: rgba(255,255,255,0.8) !important;*/
+    border-radius: 2rem;
+    border-style: none;
+    border: none;
 }
 
-@media (max-width: 800px) {
+.card-header{
+     background: linear-gradient(to right bottom, rgba(255,255,255,0.8), rgba(255,255,255,0.4)) !important;
+}
+
+.card-title{
+    padding: 5px;
+}
+
+@media (max-width: 916px) {
   .glass, .cardi, .projects {
     flex-direction: column;
   }
@@ -115,21 +138,37 @@ body{
     
 }
 
+/*LOADING SCREEN*/
 
-
-/*
-.status{
-    margin-bottom: 3rem;
+#loader-wrapper .loader-section {
+    position: fixed;
+    top: 0;
+    width: 51%;
+    height: 100%;
+    background: linear-gradient(to right top,#f7dba7, #f1ab86);
+    z-index: 1000;
+}
+ 
+#loader-wrapper .loader-section.section-left {
+    left: 0;
+}
+ 
+#loader-wrapper .loader-section.section-right {
+    right: 0;
 }
 
-.status input{
-    background: linear-gradient(to right bottom, rgba(255,255,255,0.7), rgba(255,255,255,0.1));
-    border: none;
-    width: 50%;
-    padding: 0.5rem;
-    border-radius: 2rem;
+#loader {
+    z-index: 1001;
 }
-*/
+
+
+#content {
+    margin: 0 auto;
+    padding-bottom: 50px;
+    width: 80%;
+    max-width: 978px;
+}
+
 
 @media screen and (min-width:768px)
 {
@@ -185,16 +224,68 @@ body{
 
 /*---------------------CODE*/
 
+
+/*LOADING SCREEN-------------------*/
+.loaded #loader-wrapper .loader-section.section-left {
+    -webkit-transform: translateX(-100%); 
+    -ms-transform: translateX(-100%);  
+    transform: translateX(-100%);
+}
+ 
+.loaded #loader-wrapper .loader-section.section-right {
+    -webkit-transform: translateX(100%); 
+    -ms-transform: translateX(100%); 
+    transform: translateX(100%); 
+}
+
+.loaded #loader-wrapper .loader-section.section-right,
+.loaded #loader-wrapper .loader-section.section-left {
+ 
+    -webkit-transition: all 0.3s 0.3s ease-out;
+            transition: all 0.3s 0.3s ease-out;
+}
+
+.loaded #loader-wrapper {
+        -webkit-transform: translateY(-100%);
+            -ms-transform: translateY(-100%);
+                transform: translateY(-100%);
+ 
+        -webkit-transition: all 0.3s 0.6s ease-out;
+                transition: all 0.3s 0.6s ease-out;
+}
+
+.loaded #loader {
+    opacity: 0;
+    -webkit-transition: all 0.3s ease-out;
+            transition: all 0.3s ease-out;
+}
+
+.loaded #loader-wrapper {
+    visibility: hidden;
+}
+
+.loaded #loader-wrapper .loader-section.section-right,
+.loaded #loader-wrapper .loader-section.section-left {
+ 
+    -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+                transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+}
+
+.loaded #loader-wrapper {
+        -webkit-transform: translateY(-100%);
+            -ms-transform: translateY(-100%);
+                transform: translateY(-100%);
+ 
+        -webkit-transition: all 0.3s 1s ease-out;
+                transition: all 0.3s 1s ease-out;
+}
+
+/*-----------------LOADING SCREEN*/
+
 .whiteText{
     color: #fff;
 }
 
-.logoImg{
-    margin: 10px;
-    height: 50px; 
-    width: 50px; 
-    display: block;
-}
 
 .blogImg{
     height: 300px;
@@ -216,9 +307,6 @@ a:hover{
     margin: 0;
 }
 
-.container{
-/*    padding: 3% 15%;*/
-}
 
 .still-image{
     padding-top: 10px;
@@ -227,6 +315,7 @@ a:hover{
 .animated-loop{
     padding-top: 10px;
 }
+
 /*SNIPPETS
 */
 .snips{
@@ -337,13 +426,6 @@ a:hover{
     content: "";
     display: block;
 }
-
-
-/*
-.accordion {
-    transform: rotate(-90deg);
-}
-*/
 
 
 
@@ -477,7 +559,6 @@ video{
 
 .yedidia h5{
     color: #f1ab86;
-    
     font-family: 'Krona One', sans-serif;
 }
 
@@ -635,43 +716,7 @@ video{
 }
 
 /*MOBILE LINKS PAGE*/
-.link{
-    
-}
 
-.linkContainer {
-    margin: 50px;
-    padding: 50px;
-    background-color: orange;
-    height: 414px;
-    width: 300px;
-    
-}
-
-.linkContainer ul{
-    list-style: none;
-    
-}
-
-.linkContainer li{
-    font-size: 20px;
-    list-style: none;
-    margin-top: 10px;
-    height: 40px;
-    width: 150px; 
-}
-
-.links a{
-    text-decoration: none;
-    color: #f1ab86;
-    
-}
-
-.links a:hover{
-    text-decoration: none;
-    color: black;
-    background-color: #f1ab86;
-}
 
 .images {
     display: grid;

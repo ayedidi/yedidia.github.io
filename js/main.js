@@ -2,6 +2,16 @@
 //onload methods to start up things
 
 
+//LOADING SCREEN
+
+$(document).ready(function() {
+ 
+    setTimeout(function(){
+        $('body').addClass('loaded');
+    }, 3000);
+ 
+});
+
 
 //$(".video").on("mouseover", function() {
 //    play;
