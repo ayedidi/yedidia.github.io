@@ -136,6 +136,9 @@ body{
         justify-content: space-between;
     }
     
+    .main{
+        padding: 2vh;
+    }
 }
 
 /*LOADING SCREEN*/
