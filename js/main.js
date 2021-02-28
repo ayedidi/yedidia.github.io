@@ -98,27 +98,13 @@ $(".loo").click(function() {
     $(".loops").show();
 });
 
-$(".allar").click(function() {
-    $(".work").show();
-    $(".stills").show();
-    $(".loops").show();
-});
+//$(".allar").click(function() {
+//    $(".work").show();
+//    $(".stills").show();
+//    $(".loops").show();
+//});
 
 
-
-
-$(".developer").click(function() {
-    $(".devs").show();
-    $(".anim").hide();
-//    console.log("ooo");
-    
-});
-
-$(".animator").click(function() {
-    $(".devs").hide();
-    $(".anim").show();
-    
-});
 
 $(".self").click(function() {
     $(".relSelf").show();

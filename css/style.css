@@ -1,8 +1,8 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Montserrat', sans-serif;
     font-family: 'Krona One', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 100;
     color: black;
     
@@ -78,6 +78,7 @@ body{
     border-radius: 1rem;
     border-style: none;
     width: 8rem;
+    height: 2rem;
     margin: 5px;
     color: #fff;
 }
@@ -130,6 +131,7 @@ body{
   }
    .glass {
     width: 100vw;
+       overflow-x: hidden;
   }
     .projects{
         flex-direction: row;
@@ -141,6 +143,7 @@ body{
     }
     
 }
+
 
 /*LOADING SCREEN*/
 
@@ -528,6 +531,7 @@ video{
 
 .bodybo{
     padding: 10% 10%;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .bodybo img{
