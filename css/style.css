@@ -129,7 +129,7 @@ body{
     flex-direction: column;
   }
    .glass {
-    width: 80vw;
+    width: 100vw;
   }
     .projects{
         flex-direction: row;
