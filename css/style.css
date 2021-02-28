@@ -136,9 +136,10 @@ body{
         justify-content: space-between;
     }
     
-    .main{
+    .main, .dashboard{
         padding: 2vh;
     }
+    
 }
 
 /*LOADING SCREEN*/
