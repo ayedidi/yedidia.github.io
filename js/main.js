@@ -93,19 +93,16 @@ $(".wor").click(function() {
 });
 
 $(".stil").click(function() {
-    $(".work").hide();
     $(".stills").show();
     $(".loops").hide();
 });
 
 $(".loo").click(function() {
-    $(".work").hide();
     $(".stills").hide();
     $(".loops").show();
 });
 
 $(".allar").click(function() {
-    $(".work").show();
     $(".stills").show();
     $(".loops").show();
 });
