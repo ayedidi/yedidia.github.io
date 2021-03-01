@@ -10,7 +10,7 @@
 
 body{
     font-size: 3rem;
-    overflow-x: hidden;
+/*    overflow-x: hidden;*/
 /*    cursor: none;*/
 /*    watch https://www.youtube.com/watch?v=TpwpAYi-p2w*/
 }
@@ -95,12 +95,6 @@ body{
     color: #fff;
 }
 
-.pro{
-    height: auto;
-    width: 100px; 
-    border-radius: 2rem;
-}
-
 .photoCard{
     width: 300px;
     height: auto;
@@ -134,7 +128,7 @@ body{
   }
    .glass {
     width: 100vw;
-       overflow-x: hidden;
+/*       overflow-x: hidden;*/
   }
     .projects{
         flex-direction: row;
@@ -192,17 +186,68 @@ body{
 }
 }
 
-/*CARDS FOR CODE*/
-.cardi{
-    height: 80vh;
-    width: 35rem;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+/*PORTFOLIO*/
+
+
+
+.portfolioItems{
+    background: white;
+    min-height: 80vh;
+    width: 80%;
+    background: linear-gradient(to right bottom, rgba(255,255,255,0.8), rgba(255,255,255,0.4));
     border-radius: 30px;
-    padding: 0rem 2rem;
+    z-index: 0;
+    margin: auto;
     display: flex;
+      flex-direction: row;
+    box-shadow: 0 0px 20px 0 rgba(0,0,0,0.2);
 }
+
+.portfolioItems img{
+    height: 300px;
+}
+
+.portfolioItems video{
+    
+}
+
+.portfolioButtons{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    background: linear-gradient(to right bottom, rgba(255,255,255,0.7), rgba(255,255,255,0.2));
+    border-radius: 30px;
+/*    box-shadow: 0 0px 20px 0 rgba(0,0,0,0.2);*/
+}
+
+@media (max-width: 916px) {
+  .portfolioItems, .projects {
+    flex-direction: column;
+  }
+   .portfolioItems {
+    width: 100vw;
+/*       overflow-x: hidden;*/
+  }
+/*
+    .projects{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+*/
+    
+    .main, .portfolioButtons{
+        padding: 2vh;
+    }
+   
+    .portfolioButtons{
+        margin: 1vh;
+    }
+}
+
+/*CARDS FOR CODE*/
 
 
 .project{
@@ -321,13 +366,7 @@ a:hover{
 }
 
 
-.still-image{
-    padding-top: 10px;
-}
 
-.animated-loop{
-    padding-top: 10px;
-}
 
 /*SNIPPETS
 */
@@ -556,6 +595,7 @@ video{
     z-index: -1;
 }
 
+/*YEDIDIA--------------*/
 
 .yedidia{
 /*    padding: 10%;*/
@@ -581,9 +621,7 @@ video{
     text-decoration: none;
 }
 
-.bodybody h4, h2{
-    padding: 10px 0;
-}
+/*--------------YEDIDIA*/
 
 .green{
     background-image: linear-gradient(to right, #B1DECA , #335145);
@@ -607,42 +645,9 @@ video{
 }
 
 
-
-/*
-.accordion .accordion-flush{
-    transform: rotate(90deg);
-}
-*/
-
 /*-------------------------*/
 
 
-.leftside, .rightside{
-    
-    width: 100%;
-    padding: 0;
-    margin: 0;
-/*    position: absolute;*/
-    overflow: hidden;
-}
-
-.leftside{
-    height: 60vh;
-}
-
-.leftside a{
-    color: #f1ab86;
-}
-
-.rightside{
-    height: 40vh;
-/*    background-image: url(../img/code.png);*/
-}
-
-.rightside img{
-    height: 200px;
-    width: 300px;
-}
 
 @media (max-width: 800px) {
   .leftside, .rightside {
@@ -677,16 +682,6 @@ video{
     
 }
 
-/* Style the header: fixed position (always stay at the top) */
-/*
-.header {
-  position: fixed;
-  top: 0;
-  z-index: 1;
-  width: 100%;
-  background-color: #f1f1f1;
-}
-*/
 
 /* The progress container (grey background) */
 /*
