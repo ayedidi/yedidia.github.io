@@ -188,22 +188,25 @@ body{
 
 .portfolio{
 /*    min-height: 100vh;*/
-/*    display: flex;*/
     align-items: center;
     justify-content: center;
-/*    padding: 10vh;*/
+    padding: 2vh;
+    background-image: linear-gradient(to right, #FCDFA4 , #f1ab86);
+    color: #fff;
+    height: auto;
+    width: 100vw;
 }
 
 .portfolioItems{
     background: white;
     width: 90%;
-    background: linear-gradient(to right bottom, rgba(255,255,255,0.8), rgba(255,255,255,0.4));
+    background: linear-gradient(to right bottom, rgba(255,255,255,0.8), rgba(255,255,255,0.7));
     border-radius: 30px;
     z-index: 0;
     margin: auto;
     display: flex;
-      flex-direction: row;
-/*    box-shadow: 0 0px 20px 0 rgba(0,0,0,0.2);*/
+      flex-direction: column;
+    box-shadow: 0 0px 20px 0 rgba(0,0,0,0.2);
 }
 
 .portfolioItems img{
@@ -218,13 +221,14 @@ body{
 }
 
 .portfolioButtons{
+    margin: 2vh;
     flex: 1;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
     text-align: center;
-    background: linear-gradient(to right bottom, rgba(255,255,255,0.7), rgba(255,255,255,0.2));
+    background: linear-gradient(to right bottom, rgba(255,255,255,0.8), rgba(255,255,255,0.4));
     border-radius: 30px;
 /*    box-shadow: 0 0px 20px 0 rgba(0,0,0,0.2);*/
 }
@@ -240,7 +244,6 @@ body{
   flex: 33%;
   max-width: 33%;
     height: auto;
-/*  padding: 0 4px;*/
 }
 
 .column img {
@@ -257,12 +260,6 @@ body{
     width: 100vw;
 /*       overflow-x: hidden;*/
   }
-/*
-    .projects{
-        flex-direction: row;
-        justify-content: space-between;
-    }
-*/
     
     .main, .portfolioButtons{
         padding: 2vh;
@@ -273,6 +270,34 @@ body{
     }
 }
 
+@media (max-width: 500px) {
+    .portfolio{
+        background: linear-gradient(to right bottom, rgba(255,255,255,0.8), rgba(255,255,255,0.7));
+    }
+    
+    .portfolioItems{
+        box-shadow: 6px 6px 20px rgba(255,255,255,0.2);
+    }
+    
+    .imageGrid{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .column{
+        flex: 3;
+    }
+    }
+
+@media screen and (min-width:768px)
+{
+    .image{
+    height: 80vh;
+    width: 100%;
+        background-size: cover;
+}
+}
 /*------------------PORTFOLIO*/
 
 
@@ -637,7 +662,7 @@ video{
     text-decoration: none;
 }
 
-.yedidia h5{
+.yedidia h5, .yedidia h3, .yedidia h6{
     color: #f1ab86;
     font-family: 'Krona One', sans-serif;
 }
@@ -666,7 +691,7 @@ video{
 .orange{
     background-image: linear-gradient(to right, #FCDFA4 , #f1ab86);
     color: #fff;
-    height: 100vh;
+    height: 200vh;
     width: 100vw;
 }
 
