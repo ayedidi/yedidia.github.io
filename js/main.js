@@ -44,6 +44,7 @@ $(document).ready(function(){
     $(".coolOff").hide();
     $(".3dart").hide();
     $(".faceFilter").hide();
+    $(".projectCards").show();
 })
 
 $(".parfai").click(function() {
@@ -51,7 +52,7 @@ $(".parfai").click(function() {
     $(".coolOff").hide();
     $(".3dart").hide();
     $(".faceFilter").hide();
-    
+    $(".projectCards").show();
 });
 
 $(".cool").click(function() {
@@ -59,7 +60,7 @@ $(".cool").click(function() {
     $(".coolOff").show();
     $(".3dart").hide();
     $(".faceFilter").hide();
-    
+    $(".projectCards").show();
 });
 
 $(".3dar").click(function() {
@@ -67,7 +68,7 @@ $(".3dar").click(function() {
     $(".coolOff").hide();
     $(".3dart").show();
     $(".faceFilter").hide();
-    
+    $(".projectCards").show();
 });
 
 $(".face").click(function() {
@@ -75,7 +76,12 @@ $(".face").click(function() {
     $(".coolOff").hide();
     $(".3dart").hide();
     $(".faceFilter").show();
+    $(".projectCards").show();
     
+});
+
+$(".port").click(function() {
+    $(".projectCards").hide();
 });
 
 
@@ -103,6 +109,8 @@ $(".allar").click(function() {
     $(".stills").show();
     $(".loops").show();
 });
+
+
 
 
 

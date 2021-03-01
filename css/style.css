@@ -55,6 +55,7 @@ body{
 }
 
 .dashboard{
+    padding: 2vh;
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -119,7 +120,7 @@ body{
 }
 
 @media (max-width: 916px) {
-  .glass, .cardi, .projects {
+  .glass, .projects {
     flex-direction: column;
   }
    .glass {
@@ -140,6 +141,14 @@ body{
     }
 }
 
+@media screen and (min-width:768px)
+{
+    .dashboard{
+    height: 80vh;
+    width: 100%;
+        background-size: cover;
+}
+}
 
 /*LOADING SCREEN*/
 
@@ -173,14 +182,7 @@ body{
 }
 
 
-@media screen and (min-width:768px)
-{
-    .cardi, .dashboard{
-    height: 80vh;
-    width: 100%;
-        background-size: cover;
-}
-}
+
 
 /*PORTFOLIO*/
 
