@@ -17,7 +17,7 @@
   position: relative;
   top: 20%;
   width: 100%;
-/*    right: 0;*/
+    right: 0;
   text-align: center;
   margin-top: 30px;
 }
@@ -97,18 +97,17 @@
 
 #webapp_cover
 {
-    position: absolute;
     top: 50%;
     right: 0;
     left: 0;
-    width: 39px;
+    width: 90px;
     margin: 0 auto;
     transform: translateY(-20%) scale(2);
 }
 
 #menu_button
 {
-    width: 39px;
+    width: 70px;
     overflow: hidden;
 }
 
@@ -172,15 +171,15 @@
 
 #menu_checkbox:checked + #menu_label:before
 {
-    left: -39px;
+    left: -70px;
 }
 
 #menu_checkbox:checked + #menu_label:after
 {
-    left: 39px;
+    left: -70px;
 }
 
-#menu_checkbox:checked + #menu_label #menu_text_bar:before
+#menu_checkbox:checked + #menu_label #menu_text_bar:before, #menu_label.open
 {
     animation: moveUpThenDown 0.8s ease 0.2s forwards, shakeWhileMovingUp 0.8s ease 0.2s forwards, shakeWhileMovingDown 0.2s ease 0.8s forwards;
 }
