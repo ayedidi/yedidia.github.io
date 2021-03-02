@@ -55,3 +55,26 @@
     color: #fff;
 }
 
+/*YEDIDIA--------------*/
+
+.yedidia{
+    font-family: 'Krona One', sans-serif;
+    font-weight: 400;
+}
+
+.yedidia a{
+    color: #f1ab86;
+    text-decoration: none;
+}
+
+.yedidia h5, .yedidia h3, .yedidia h6{
+    color: #f1ab86;
+    font-family: 'Krona One', sans-serif;
+}
+
+.yedidia:hover{
+    color: #B1DECA;
+    text-decoration: none;
+}
+
+/*--------------YEDIDIA*/
