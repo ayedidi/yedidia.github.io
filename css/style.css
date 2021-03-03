@@ -169,15 +169,15 @@ body{
 }
 
 .loader .loader-inner{
-    width: 30px;
-    height: 30px;
+    width: 60px;
+    height: 60px;
+    border-radius: 2rem;
     background: linear-gradient(to right top,#f7dba7, #f1ab86);
     position: absolute;
     top: 0;
     left: 0;
-/*    box-shadow: 112px 112px 20px #000;*/
     transform-style: preserve-3d;
-    animation: loading 2s ease-in-out both;
+    animation: slide-out-elliptic-top-bck 2s ease-in-out both;
     animation-iteration-count: 2;
 }
 
@@ -193,8 +193,8 @@ body{
 .loader .loader-inner:after{
     content: "";
     display: block;
-    width: 30px;
-    height: 30px;
+    width: 60px;
+    height: 60px;
     position: absolute;
 }
 
@@ -214,32 +214,44 @@ body{
     transform: rotateY(90deg);
 }
 
-@keyframes loading{
-    0%, 100%{
-        transform: none;
-    }
-    13% {
-        transform: translate(30px, 0);
-    }
-    25%{
-        transform: translate(60px, 0);
-    }
-    38%{
-        transform: translate(60px, 30px);
-    }
-    50%{
-        transform: translate(60px, 30px);
-    }
-    69%{
-        transform: translate(30px, 60px);
-    }
-    75%{
-        transform: translate(0px, 60px);
-    }
-    88%{
-        transform: translate(0px, 30px);
-    }
+.slide-out-elliptic-top-bck {
+	-webkit-animation: slide-out-elliptic-top-bck 1s ease-in both;
+	        animation: slide-out-elliptic-top-bck 1s ease-in both;
 }
+
+@-webkit-keyframes slide-out-elliptic-top-bck {
+  0% {
+    -webkit-transform: translateY(0) rotateX(0) scale(1);
+            transform: translateY(0) rotateX(0) scale(1);
+    -webkit-transform-origin: 50% 1400px;
+            transform-origin: 50% 1400px;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(-600px) rotateX(-30deg) scale(0);
+            transform: translateY(-600px) rotateX(-30deg) scale(0);
+    -webkit-transform-origin: 50% 100%;
+            transform-origin: 50% 100%;
+    opacity: 1;
+  }
+}
+@keyframes slide-out-elliptic-top-bck {
+  0% {
+    -webkit-transform: translateY(0) rotateX(0) scale(1);
+            transform: translateY(0) rotateX(0) scale(1);
+    -webkit-transform-origin: 50% 1400px;
+            transform-origin: 50% 1400px;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(-600px) rotateX(-30deg) scale(0);
+            transform: translateY(-600px) rotateX(-30deg) scale(0);
+    -webkit-transform-origin: 50% 100%;
+            transform-origin: 50% 100%;
+    opacity: 1;
+  }
+}
+
 
 /*LOADING SCREEN*/
 
