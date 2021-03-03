@@ -1,209 +1,340 @@
-/* MENU
-=========================== */
-.overlay {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  right: 0;
-  background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0, 0.9);
-  overflow-x: hidden;
-  transition: 0.5s;
+/*
+=====
+DEPENDENCES
+=====
+*/
+
+/* The component will reset button browser styles */
+
+.r-button{
+  --uirButtonBackgroundColor: var(--rButtonBackgroundColor, transparent);
+  --uirButtonPadding: var(--rButtonPadding, var(--rButtonPaddingTop, 0) var(--rButtonPaddingRight, 0) var(--rButtonPaddingBottom, 0) var(--rButtonPaddingLeft, 0));
+  --uirButtonBorderWidth: var(--rButtonBorderWidth, 0);
+  --uirButtonBorderStyle: var(--rButtonBorderStyle, solid);
+  --uirButtonBorderColor: var(--rButtonBorderColor, currentColor);
+  --uirButtonFontFamily: var(--rButtonFontFamily, inherit);
+  --uirButtonFontSize: var(--rButtonFontSize,  inherit);
+  --uirButtonColor: var(--rButtonColor);
+
+  background-color: var(--uirButtonBackgroundColor);
+  padding: var(--uirButtonPadding);
+
+  border-width: var(--uirButtonBorderWidth);
+  border-style: var(--uirButtonBorderStyle);
+  border-color: var(--uirButtonBorderColor);
+
+  cursor: pointer;
+
+  font-family: var(--uirButtonFontFamily);
+  font-size: var(--uirButtonFontSize);
 }
 
-.overlay-content {
+.r-button::-moz-focus-inner,
+.r-button[type="button"]::-moz-focus-inner,
+.r-button[type="reset"]::-moz-focus-inner,
+.r-button[type="submit"]::-moz-focus-inner {
+  
+  /* Remove the inner border and padding in Firefox. */
+  
+  border-style: none;
+  padding: 0;
+}
+
+/* The component will reset browser's styles of link */
+
+.r-link{
+    --uirLinkDisplay: var(--rLinkDisplay, inline-flex);
+    --uirLinkTextColor: var(--rLinkTextColor);
+    --uirLinkTextDecoration: var(--rLinkTextDecoration, none);
+
+    display: var(--uirLinkDisplay) !important;
+    color: var(--uirLinkTextColor) !important;
+    text-decoration: var(--uirLinkTextDecoration) !important;
+}
+
+/* The component will reset browser's styles of list */
+
+.r-list{
+    --uirListPaddingLeft: var(--rListPaddingLeft, 0);
+    --uirListMarginTop: var(--rListMarginTop, 0);
+    --uirListMarginBottom: var(--rListMarginBottom, 0);
+    --uirListListStyle: var(--rListListStyle, none);
+
+    padding-left: var(--uirListPaddingLeft) !important;
+    margin-top: var(--uirListMarginTop) !important;
+    margin-bottom: var(--uirListMarginBottom) !important;
+    list-style: var(--uirListListStyle) !important;
+}
+
+/* Basic styles of the hamburger component */
+
+.m-hamburger{  
+  --uiHamburgerThickness: var(--hamburgerThickness, 4px);
+
+  display: var(--hamburgerDisplay, inline-flex);
+  width: var(--hamburgerWidth, 28px);
+  height: var(--hamburgerHeight, 20px);
+
   position: relative;
-  top: 20%;
+}
+
+.m-hamburger::before, 
+.m-hamburger::after, 
+.m-hamburger__label{
   width: 100%;
-    right: 0;
-  text-align: center;
-  margin-top: 30px;
-}
+  height: var(--uiHamburgerThickness);
+  border-radius: var(--hamburgerBorderRadius, 5px);
+  background-color: var(--hamburgerBackgroundColor, currentColor);
 
-.overlay a{
-  padding: 8px;
-  text-decoration: none;
-  font-size: 36px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
-
-.overlay a:hover, .overlay a:focus {
-    text-decoration: none;
-    color: #f1ab86;  
-}
-
-.overlay .closebtn {
   position: absolute;
-  top: 20px;
-  right: 45px;
-  font-size: 60px;
+  left: 0;
 }
 
-.menu {
+.m-hamburger::before, 
+.m-hamburger::after{
+  content:"";
+}
+
+.m-hamburger::before{
+  top: 0;
+}
+
+.m-hamburger::after{
+  bottom: 0;
+}
+
+.m-hamburger__label{
+  /* The calculation of middle hamburger button line position */
+  
+  top: calc(50% - calc(var(--uiHamburgerThickness) / 2));
+}
+
+/* helper to hide elements that are available only for screen readers. */
+
+.screen-reader{
+  width: var(--screenReaderWidth, 1px) !important;
+  height: var(--screenReaderHeight, 1px) !important;
+  padding: var(--screenReaderPadding, 0) !important;
+  border: var(--screenReaderBorder, none) !important;
+
+  position: var(--screenReaderPosition, absolute) !important;
+  clip: var(--screenReaderClip, rect(1px, 1px, 1px, 1px)) !important;
+  overflow: var(--screenReaderOverflow, hidden) !important;
+}
+
+/*
+=====
+MENU STYLES
+=====
+*/
+
+.menu{
+  --uiMenuCircleSize: var(--menuCircleSize, 6.25rem);
+  --uiMenuCircleOffset: var(--menuCircleOffset, 1rem);
+  --uiMenuCircleHeight: calc(var(--uiMenuCircleSize) / 2);  
+  --uiMenuCircleBackgroundColor: var(--menuCircleBackgroundColor, currentColor);
+
+  --uiMenuHamburgerWidth: var(--menuHamburgerWidth, 1.75rem);
+  --uiMenuHamburgerHeight: var(--menuHamburgerHeight, 1.25rem);
+  
+  --rButtonPaddingTop: calc(var(--uiMenuCircleHeight) - var(--uiMenuHamburgerHeight) - var(--uiMenuCircleOffset));
+  
+  --hamburgerWidth: var(--uiMenuHamburgerWidth);
+  --hamburgerHeight: var(--uiMenuHamburgerHeight);
+  --hamburgerBackgroundColor: var(--menuHamburgerBackgroundColor, #fff);
+
+  width: 100%;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+
   position: fixed;
-    top: 0%;
-    right: 0;
-    z-index: 1;
-    list-style: none;
-/*    text-align: right;*/
-    color: #f1ab86;
-    text-decoration: none;
-    font-size: 40px; 
-    font-family: 'Krona One', sans-serif;
-    cursor: pointer;
+  bottom: 0;
+  left: 0;
+  z-index: var(--menuZindex, 9998);
 }
 
-.menuM {
-  position: fixed;
-    top: 0%;
-    right: 0;
-    z-index: 1;
-    list-style: none;
-    text-align: right;
-    color: #B1DECA;
-    text-decoration: none;
+.menu__nav{
+  box-sizing: border-box;
+  width: 100%;
+  height: 0;
+
+  transition: opacity .2s ease-out;
+  opacity: 0;
+
+  display: flex;
+  align-items: flex-end;
+  z-index: 2;
 }
 
+.menu__list{
+  width: 100%;
+  max-height: 100%;
 
-@media screen and (max-height: 450px) {
-  .overlay a {font-size: 20px}
-  .overlay .closebtn {
-  font-size: 40px;
-  top: 15px;
-  right: 35px;
-  }
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
-.yedidia{
-    font-family: 'Krona One', sans-serif;
-    font-weight: 400;
+.menu__toggle{
+  box-sizing: border-box;
+  width: var(--uiMenuCircleSize);
+  height: var(--uiMenuCircleHeight);
+  flex: none;
+
+  position: relative;
+  z-index: 0;
 }
 
+.menu__toggle::before{
+  /*
+  1. The font-size property is used to simplify calculations of the element's sizes and position
+  2. The negative value for the bottom property need for hiding half of circle. 
+  */
 
-*
-{
-    -webkit-tap-highlight-color: transparent;
+  content: "";
+  width: 1em;
+  height: 1em;
+  font-size: var(--uiMenuCircleSize); /* 1 */
+
+  background-color: var(--uiMenuCircleBackgroundColor);
+  border-radius: 50%;
+
+  position: absolute;
+  bottom: -.5em; /* 2 */
+  left: calc(50% - .5em);
+  z-index: -1;
+
+  will-change: width, height;
+  transition: transform .25s cubic-bezier(0.04, -0.1, 0.29, 0.98),
+              width .25s cubic-bezier(0.04, -0.1, 0.29, 0.98),
+              height .25s cubic-bezier(0.04, -0.1, 0.29, 0.98);
 }
 
-*:focus
-{
-    outline: none;
+/* styles of hamburger's animation */
+
+.m-hamburger::before, 
+.m-hamburger::after, 
+.m-hamburger__label{
+  transition-timing-function: ease;
+  transition-duration: .15s;  
 }
 
-
-#webapp_cover
-{
-    top: 50%;
-    right: 0;
-    left: 0;
-    width: 90px;
-    margin: 0 auto;
-    transform: translateY(-20%) scale(2);
+.m-hamburger::before, 
+.m-hamburger::after{
+  transition-property: transform;
 }
 
-#menu_button
-{
-    width: 70px;
-    overflow: hidden;
+.m-hamburger__label{
+  transition-property: transform, opacity;
 }
 
-#menu_checkbox
-{
-    display: none;
+/*
+=====
+MENU STATES
+=====
+*/
+
+.menu__toggle:focus{
+  outline: var(--menuHaburgerOutlineOWidth, 2px) solid var(--menuHaburgerOutlineColor);
+  outline-offset: var(--menuHaburgerOutlineOffset, 5px);
 }
 
-#menu_label
-{
-    position: relative;
-    display: block;
-    height: 29px;
-    cursor: pointer;
+.menu_activated{
+  height: 100%;
 }
 
-#menu_label:before, #menu_label:after, #menu_text_bar
-{
-    position: absolute;
-    left: 0;
-    width: 100%;
-    height: 5px;
-    background-color: #fff;
+.menu_activated .menu__nav{
+  flex-grow: 1;
+  opacity: 1;
+
+  will-change: opacity;
+  transition-duration: .2s;
+  transition-delay: .3s;
 }
 
-#menu_label:before, #menu_label:after
-{
-    content: '';
-    transition: 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55) left;
+.menu_activated .menu__toggle::before{
+  width: 100vmax;
+  height: 100vmax;
+  transform: translate3d(-50vh, -50vh, 0) scale(5);
+  transition-duration: 1s;
 }
 
-#menu_label:before
-{
-    top: 0;
+.menu:not(.menu_activated) .menu__list{
+  display: none;
 }
 
-#menu_label:after
-{
-    top: 12px;
+.menu_activated .m-hamburger::before{
+  top: 50%;
+  transform: translate3d(0, -50%, 0) rotate(45deg);
 }
 
-#menu_text_bar
-{
-    top: 24px;
+.menu_activated .m-hamburger::after{
+  transform: translate3d(0, -50%, 0) rotate(135deg);
+  top: 50%;
 }
 
-#menu_text_bar:before
-{
-    content: 'yedidia';
-    position: absolute;
-    top: 5px;
-    right: 0;
-    left: 0;
-    color: #fff;
-    font-size: 12px;
-/*    font-weight: bold;*/
-    font-family: 'Krona One', sans-serif;
-    font-weight: 400;
-    text-align: center;
+.menu_activated .m-hamburger__label{
+  transform: rotate(-45deg) translate3d(-.285em,-.3em, 0);
+  opacity: 0;
 }
 
-#menu_checkbox:checked + #menu_label:before
-{
-    left: -70px;
+/*
+=====
+SETTINGS
+=====
+*/
+
+:root{
+  --colorWhite: #fff;
+  --colorMain: #f1ab86;
+  --menuCircleBackgroundColor: var(--colorMain);
+  --menuHamburgerBackgroundColor: var(--colorWhite);
+  --menuHaburgerOutlineColor: var(--colorMain);
 }
 
-#menu_checkbox:checked + #menu_label:after
-{
-    left: -70px;
+.menu_activated{
+  --menuHaburgerOutlineColor: var(--colorWhite);
 }
 
-#menu_checkbox:checked + #menu_label #menu_text_bar:before, #menu_label.open
-{
-    animation: moveUpThenDown 0.8s ease 0.2s forwards, shakeWhileMovingUp 0.8s ease 0.2s forwards, shakeWhileMovingDown 0.2s ease 0.8s forwards;
+/*
+=====
+DEMO
+=====
+*/
+
+body{
+  display: flex;
+  height: 100vh;
+  margin: 0;  
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Open Sans, Ubuntu, Fira Sans, Helvetica Neue, sans-serif;
+  font-size: 1rem;
 }
 
-@keyframes moveUpThenDown
-{
-    0%{ top:0; }
-    50%{ top:-27px;}
-    100%{ top:-14px; }
+.page{
+  max-width: 380px;
+  padding: 1rem;
+  margin: auto;  
+  text-align: center;
 }
 
-@keyframes shakeWhileMovingUp
-{
-    0%{ transform: rotateZ(0); }
-    25%{ transform:rotateZ(-10deg); }
-    50%{ transform:rotateZ(0deg); }
-    75%{ transform:rotateZ(10deg); }
-    100%{ transform:rotateZ(0); }
+.page__name{
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
 }
 
-@keyframes shakeWhileMovingDown
-{
-    0%{ transform:rotateZ(0); }
-    80%{ transform:rotateZ(3deg); }
-    90%{ transform:rotateZ(-3deg); }
-    100%{ transform:rotateZ(0); }
+.page__hint{
+  display: block;
+  line-height: 1.45;
+  margin-top: 1rem;
+}
+
+.menu__group{
+  --rLinkTextColor: var(--colorWhite);
+
+  padding: .5rem 2rem; 
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
 }
