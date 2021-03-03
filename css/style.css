@@ -279,8 +279,8 @@ body{
 .loaded #loader-wrapper .loader-section.section-right,
 .loaded #loader-wrapper .loader-section.section-left {
  
-    -webkit-transition: all 0.3s 0.3s ease-out;
-            transition: all 0.3s 0.3s ease-out;
+    -webkit-transition: all 0.4s 0.4s ease-out;
+            transition: all 0.4s 0.4s ease-out;
 }
 
 .loaded #loader-wrapper {
@@ -288,8 +288,12 @@ body{
             -ms-transform: translateY(-100%);
                 transform: translateY(-100%);
  
-        -webkit-transition: all 0.3s 0.6s ease-out;
-                transition: all 0.3s 0.6s ease-out;
+        -webkit-transition: all 0.4s 1s ease-out;
+                transition: all 0.4s 1s ease-out;
+}
+
+.loaded #loader-wrapper {
+    visibility: hidden;
 }
 
 .loaded #loader {
@@ -298,9 +302,7 @@ body{
             transition: all 0.3s ease-out;
 }
 
-.loaded #loader-wrapper {
-    visibility: hidden;
-}
+
 
 .loaded #loader-wrapper .loader-section.section-right,
 .loaded #loader-wrapper .loader-section.section-left {
