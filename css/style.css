@@ -123,12 +123,16 @@ body{
     flex-direction: column;
   }
    .glass {
-    width: 100vw;
+    width: 90vw;
 /*       overflow-x: hidden;*/
   }
     .projects{
         flex-direction: row;
         justify-content: space-between;
+    }
+    
+    .main{
+        overflow-x: hidden;
     }
     
     .main, .dashboard{
@@ -159,8 +163,8 @@ body{
 }
 
 .loader{
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
     margin: auto;
     transform-style: preserve-3d;
     transform: rotateX(15deg) rotate(30deg);
@@ -169,8 +173,8 @@ body{
 }
 
 .loader .loader-inner{
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
     background: linear-gradient(to right top,#f7dba7, #f1ab86);
     position: absolute;
@@ -178,7 +182,7 @@ body{
     left: 0;
     transform-style: preserve-3d;
     animation: slide-out-elliptic-bottom-fwd 2s ease-in-out both;
-    animation-iteration-count: 3;
+    animation-iteration-count: 4;
 }
 
 .loader .loader-inner:nth-child(1){
@@ -186,15 +190,15 @@ body{
 }
 
 .loader .loader-inner:nth-child(2){
-    animation-delay: -2s;
+    animation-delay: -1.8s;
 }
 
 .loader .loader-inner:before,
 .loader .loader-inner:after{
     content: "";
     display: block;
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
     position: absolute;
 }
 
@@ -205,8 +209,10 @@ body{
     transform-origin: center top;
     transform: rotateX(-90deg);
       filter: blur(5px);
+/*
     background: radial-gradient(circle at 50% 120%, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0) 70%);
     opacity: 0.6;
+*/
 }
 
 .loader .loader-inner:after{

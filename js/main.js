@@ -8,7 +8,7 @@ $(document).ready(function() {
  
     setTimeout(function(){
         $('body').addClass('loaded');
-    }, 4000);
+    }, 6000);
  
 });
 
