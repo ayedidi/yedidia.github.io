@@ -178,7 +178,7 @@ body{
     left: 0;
     transform-style: preserve-3d;
     animation: slide-out-elliptic-top-bck 2s ease-in-out both;
-    animation-iteration-count: 2;
+    animation-iteration-count: 3;
 }
 
 .loader .loader-inner:nth-child(1){
@@ -204,6 +204,9 @@ body{
     left: 0;
     transform-origin: center top;
     transform: rotateX(-90deg);
+      filter: blur(5px);
+    background: radial-gradient(circle at 50% 120%, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0) 70%);
+    opacity: 0.6;
 }
 
 .loader .loader-inner:after{
@@ -212,6 +215,7 @@ body{
     left: 100%;
     transform-origin: center left;
     transform: rotateY(90deg);
+    filter: blur(10px);
 }
 
 .slide-out-elliptic-top-bck {
@@ -292,8 +296,8 @@ body{
 .loaded #loader-wrapper .loader-section.section-right,
 .loaded #loader-wrapper .loader-section.section-left {
  
-    -webkit-transition: all 0.4s 0.4s ease-out;
-            transition: all 0.4s 0.4s ease-out;
+    -webkit-transition: all 1s 1.5s ease-out;
+            transition: all 1s 1.5s ease-out;
 }
 
 .loaded #loader-wrapper {
@@ -301,8 +305,8 @@ body{
             -ms-transform: translateY(-100%);
                 transform: translateY(-100%);
  
-        -webkit-transition: all 0.4s 1s ease-out;
-                transition: all 0.4s 1s ease-out;
+        -webkit-transition: all 1s 5s ease-out;
+                transition: all 1s 5s ease-out;
 }
 
 .loaded #loader-wrapper {
@@ -311,8 +315,8 @@ body{
 
 .loaded #loader {
     opacity: 0;
-    -webkit-transition: all 0.3s ease-out;
-            transition: all 0.3s ease-out;
+    -webkit-transition: all 1.5s ease-out;
+            transition: all 1.5s ease-out;
 }
 
 
@@ -329,8 +333,8 @@ body{
             -ms-transform: translateY(-100%);
                 transform: translateY(-100%);
  
-        -webkit-transition: all 0.3s 1s ease-out;
-                transition: all 0.3s 1s ease-out;
+        -webkit-transition: all 1s 2s ease-out;
+                transition: all 1s 2s ease-out;
 }
 
 
