@@ -152,8 +152,8 @@ body{
 /*3D LOADER SCREEN*/
 .loadContainer{
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 50vh;
+    left: 50vw;
     transform: translate(-50%, -50%);
     z-index: 1002;
 }
@@ -161,7 +161,7 @@ body{
 .loader{
     width: 90px;
     height: 90px;
-    margin: 30px auto 100px;
+    margin: auto;
     transform-style: preserve-3d;
     transform: rotateX(45deg) rotate(45deg);
     position: relative;
@@ -177,7 +177,8 @@ body{
     left: 0;
 /*    box-shadow: 112px 112px 20px #000;*/
     transform-style: preserve-3d;
-    animation: loading 2s ease-in-out infinite both;
+    animation: loading 2s ease-in-out both;
+    animation-iteration-count: 2;
 }
 
 .loader .loader-inner:nth-child(1){
