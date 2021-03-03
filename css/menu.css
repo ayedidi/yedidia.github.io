@@ -152,7 +152,7 @@ MENU STYLES
   position: fixed;
   bottom: 0;
   left: 0;
-  z-index: var(--menuZindex, 9998);
+  z-index: var(--menuZindex, 999);
 }
 
 .menu__nav{

@@ -32,36 +32,39 @@
     <title>Yedidia - Parfait</title>
   <!--    MENU
 ========================-->  
-<div>
-<div id="myNav" class="overlay yedidia">
-  <a href="javascript:void(0)" class="closebtn" id="menu_button" onclick="closeNav()">&times;</a>
-  
-  <div class="overlay-content">
-   <a href="index.html">HOME</a>
-   <a href="index.html#portfolio">PORTFOLIO</a>
-<!--    <a href="about.html">ABOUT</a>-->
-<!--    <a href="collab.html">COLLAB</a>-->
-    <a href="mailto:yedidia3d@gmail.com">CONTACT</a>
-    <a href="https://www.instagram.com/yedidiai/">INSTAGRAM</a>
-  <p class="whiteText">YEDIDIA 2021</p>
+<div class="menu">
+  <nav class="menu__nav">
+    <ul class="menu__list r-list">
+      <li class="menu__group">
+        <a href="index.html" class="menu__link r-link">HOME</a>
+      </li>
+      <li class="menu__group">
+        <a href="index.html#portfolio" class="menu__link r-link">PORTFOLIO</a>
+      </li>
+<!--
+      <li class="menu__group">
+        <a href="about.html" class="menu__link r-link">ABOUT</a>
+      </li>
+      <li class="menu__group">
+        <a href="collab.html" class="menu__link r-link">COLLAB</a>
+      </li>
+-->
+      <li class="menu__group">
+        <a href="mailto:yedidia3d@gmail.com" class="menu__link r-link">CONTACT</a>
+      </li>
+      <li class="menu__group">
+        <a href="https://www.instagram.com/yedidiai/" class="menu__link r-link">INSTAGRAM</a>
+      </li>
+    </ul>
+  </nav>
+  <button class="menu__toggle r-button" type="button">
+    <span class="menu__hamburger m-hamburger">
+      <span class="m-hamburger__label">
+        <span class="menu__screen-reader screen-reader">Open menu</span>
+      </span>
+    </span>
+  </button>
 </div>
-</div>
-
-<span class="menuM yedidia d-block d-sm-none" style="font-size:40px; cursor:pointer;" onclick="openNav()"><h5>yedidia</h5></span>
-
-<span class="menu yedidia d-none d-sm-block" style="font-size:40px; cursor:pointer;" onclick="openNav()">
-   <div id="webapp_cover">
-  <div id="menu_button">
-    <input type="checkbox" id="menu_checkbox">
-    <label for="menu_checkbox" id="menu_label">
-      <div id="menu_text_bar"></div>
-    </label>
-  </div>
-</div>
-   
-   
-   </span>     
-    </div>
     
     
     <!--    MENU
