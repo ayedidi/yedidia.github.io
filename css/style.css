@@ -95,6 +95,17 @@ body{
     color: #fff;
 }
 
+.projectButton:hover{
+    text-decoration: none;
+    color: #fff;
+    animation: flash 2s;
+}
+
+@keyframes flash {
+    from {background: #f7dba7;}
+  to {background: #f1ab86;}
+}
+
 .photoCard{
     width: 300px;
     height: auto;
@@ -179,8 +190,8 @@ body{
   bottom: 0;
   margin: auto;
   border: 6px solid #f2f2f2;
-  border-top: 6px dotted #f2f2f2;
-  border-bottom: 6px dotted #f2f2f2;
+  border-top: 5px dashed #f2f2f2;
+  border-bottom: 5px dashed #f2f2f2;
   border-radius: 50%;
   animation: loading 2s infinite;
 }
@@ -324,7 +335,7 @@ body{
         
         height: auto;
     }
-    }
+}
 
 @media screen and (min-width:768px)
 {
@@ -356,11 +367,42 @@ body{
     height: 100%;
     background: rgb(236, 236, 236);
     position: absolute;
-    left: 20%;
+    left: 5%;
 }
 
 .percentage{
     font-weight: bold;
+}
+
+.roles{
+    display: flex;
+}
+
+.roles h4{
+    padding: 1vh 0;
+}
+
+.process{
+    margin: 2vh 0;
+}
+
+.progressBar{
+    display: flex;
+    padding: 1vh;
+}
+
+.progressBar h7{
+    padding-right: 1vh;
+}
+
+@media (max-width: 916px) {
+    .roles{
+        flex-direction: column;
+    }
+    
+    .progressBar{
+        flex-direction: column;
+    }
 }
 
 /*---------------------CODE*/

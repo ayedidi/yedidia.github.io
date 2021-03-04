@@ -52,9 +52,12 @@
       <li class="menu__group">
         <a href="mailto:yedidia3d@gmail.com" class="menu__link r-link">CONTACT</a>
       </li>
+<!--
       <li class="menu__group">
         <a href="https://www.instagram.com/yedidiai/" class="menu__link r-link">INSTAGRAM</a>
       </li>
+-->
+   <li><p style="padding-left: 4vh;">YEDIDIA 2021</p></li>
     </ul>
   </nav>
   <button class="menu__toggle r-button" type="button">
@@ -82,12 +85,13 @@
     <!-- Intro
     =============================== -->
 <div class="intro">
-<h1>PARFAIT PARFAIT</h1>
+<h1>PARFAIT</h1>
 
-<div class="">
-   <h3>Roles: </h3>
+<div class="roles">
+   <h4>Roles: </h4>
+   <button style="width: 160px;" class="projectButton"><a href="#gd" class="gd">Game Designer</a></button>
    <button class="projectButton"><a href="#cd" class="cd">3D Artist</a></button>
-<!--   <button class="projectButton" style="width: 200px;"><a href="#iD" class="iD">VR Unity Developer</a></button>-->
+   <button class="projectButton" style="width: 200px;"><a href="#iD" class="iD">VR Unity Developer</a></button>
     </div> 
 </div>
 
@@ -102,7 +106,7 @@
   
    <!-- Project Overview
     =============================== -->
-<div>
+<div id="gd" class="process">
  <h4>Game Overview</h4>    
   <p>Parfait is a one-player VR parfait cafe game. The chef serves impatient customers while managing a lively kitchen.</p> 
 <!--  <a href="">Play on Oculus Quest</a> -->
@@ -126,7 +130,7 @@
 
 <!-- 3D Art
     =============================== --> 
-<div id="cd">
+<div class="process" id="cd">
     <h4>3D Models</h4>
     <img class="img-fluid" src="img/1721.png" alt="">
 <!--    <p></p>-->
@@ -134,12 +138,18 @@
 
 <!-- Development
     =============================== --> 
-<!--
-<div id="iD">
+<div class="process" id="iD">
     <h4>Game Development</h4>
+    
+    <div class="progressBar">
+        <h7>PROGRESS </h7>
+        <div class="progress">
+            <div class="percentage"></div>
+        </div>
+    </div>
     <p>I'm currently building the game in Unity. Stay tuned for updates.</p>
+
 </div>
--->
 
 
      
