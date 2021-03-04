@@ -6,9 +6,9 @@
 
 $(document).ready(function() {
  
-    setTimeout(function(){
-        $('body').addClass('loaded');
-    }, 1000);
+//    setTimeout(function(){
+//        $('body').addClass('loaded');
+//    }, 1000);
     
     var loading = $(".loading");
   loading.delay(loading.attr("delay-hide")).slideUp();
