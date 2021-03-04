@@ -8,9 +8,13 @@ $(document).ready(function() {
  
     setTimeout(function(){
         $('body').addClass('loaded');
-    }, 6000);
+    }, 1000);
+    
+    var loading = $(".loading");
+  loading.delay(loading.attr("delay-hide")).slideUp();
  
 });
+
 
 
 //$(".video").on("mouseover", function() {
