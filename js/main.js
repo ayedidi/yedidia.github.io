@@ -177,10 +177,3 @@ $(".white").click(function() {
 //  var scrolled = (winScroll / height) * 100;
 //  document.getElementById("myBar").style.width = scrolled + "%";
 //}
-
-$('[lang="es"]').hide();
-
-$('#switch-lang').click(function() {
-  $('[lang="es"]').toggle();
-  $('[lang="en"]').toggle();
-});

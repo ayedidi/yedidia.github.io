@@ -187,6 +187,7 @@ body{
 .loading:before {
   font-family: 'Krona One', sans-serif;
   font-size: 20px;
+    text-transform: uppercase;
   letter-spacing: 1px;
   color: white;
   content: "Loading...";
