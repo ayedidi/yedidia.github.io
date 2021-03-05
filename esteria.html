@@ -32,23 +32,42 @@
     <title>Yedidia - Esteria</title>
   <!--    MENU
 ========================-->  
-<div>
-<div id="myNav" class="overlay yedidia">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <div class="overlay-content">
-   <a href="index.html">HOME</a>
-<!--    <a href="about.html">ABOUT</a>-->
-<!--    <a href="collab.html">COLLAB</a>-->
-    <a href="mailto:yedidia.hubbard@gmail.com">CONTACT</a>
-    <a href="https://instagram.com/yedidia3d?igshid=tmbkxnnzuvmi">INSTAGRAM</a>
-  <p class="whiteText">YEDIDIA 2021</p>
+<div class="menu">
+  <nav class="menu__nav">
+    <ul class="menu__list r-list">
+      <li class="menu__group">
+        <a href="index.html" class="menu__link r-link">HOME</a>
+      </li>
+      <li class="menu__group">
+        <a href="index.html#portfolio" class="menu__link r-link">PORTFOLIO</a>
+      </li>
+<!--
+      <li class="menu__group">
+        <a href="about.html" class="menu__link r-link">ABOUT</a>
+      </li>
+      <li class="menu__group">
+        <a href="collab.html" class="menu__link r-link">COLLAB</a>
+      </li>
+-->
+      <li class="menu__group">
+        <a href="mailto:yedidia3d@gmail.com" class="menu__link r-link">CONTACT</a>
+      </li>
+<!--
+      <li class="menu__group">
+        <a href="https://www.instagram.com/yedidiai/" class="menu__link r-link">INSTAGRAM</a>
+      </li>
+-->
+   <li><p style="padding-left: 4vh;">YEDIDIA 2021</p></li>
+    </ul>
+  </nav>
+  <button class="menu__toggle r-button" type="button">
+    <span class="menu__hamburger m-hamburger">
+      <span class="m-hamburger__label">
+        <span class="menu__screen-reader screen-reader">Open menu</span>
+      </span>
+    </span>
+  </button>
 </div>
-</div>
-
-<span class="menuM yedidia d-block d-sm-none" style="font-size:40px; cursor:pointer;" onclick="openNav()"><a href=""></a><h5>yedidia</h5></span>
-
-<span class="menu yedidia d-none d-sm-block" style="font-size:40px; cursor:pointer;" onclick="openNav()">yedidia</span>     
-    </div>
     
     <!--    MENU
 ========================-->    
@@ -62,20 +81,20 @@
     
     <!-- Intro
     =============================== -->
-<h1>ESTERIA</h1>
-<div class="roles container">
-  <div class="row">
-   <h3>Roles: </h3>
-   <a href="#pm" class="pm">Project Manager</a>
-   <a href="#iD" class="iD">Developer</a>
-    <a href="#cd" class="cd">3D Artist</a>
-    </div> 
+
+<div class="intro">
+<h1 class="yedidia">ESTERIA</h1>
+<div class="roles">
+   <h4 class="yedidia">Roles: </h4>
+   <button class="projectButton" style="width: 200px;" ><a href="#pm" class="pm">Project Manager</a></button>
+   <button class="projectButton"><a href="#iD" class="iD">Developer</a></button>
+    <button class="projectButton"><a href="#cd" class="cd">3D Artist</a></button>
  </div>
-  
+  </div>
  
 <!-- Elladia
     =============================== -->
-<div>
+<div class="yedidia">
  <h4>Elladia Studio</h4>    
   <p>This project was created for Elladia Studio. Founded in 2019, Elladia Studio is an incorporated company that produces sustainable physical and digital creative works, elevating the voices of femmes of color. The company's overarching goal is to facilitate the connection between people and their higher self.</p> 
   <a href="https://elladia.github.io/">Elladia Studio</a>  
@@ -84,7 +103,7 @@
 
 <!-- Project Overview
     =============================== -->
-<div>
+<div class="process yedidia">
   <h4>Project Overview</h4>
   <img class="img-fluid" src="img/Esteria.jpg" alt="Esteria">
   <p>Esteria is a game set in space. Players are assigned a character based on their of their zodiac sign.</p>
@@ -93,30 +112,29 @@
   
 <!-- Project Management
     =============================== -->
-<div id="pm">
+<div id="pm" class="process yedidia">
     <h4>Project Management</h4>
     <p>Our timeline</p>    
 </div>
 
 <!-- iOS Development
     =============================== --> 
-<div id="iD">
+<div id="iD" class="process yedidia">
     <h4>Game Development</h4>
     <p>This project is being developed in Godot using GDScript and Unity using C#.</p>
 </div>
 <!-- 3D Art
     =============================== --> 
-<div id="cd">
+<div id="cd" class="process yedidia">
     <h4>3D Characters</h4>
     <p>Meet the characters:</p>
-    <img class="img-fluid" src="img/Esteria.jpg" alt="">
     <img class="img-fluid" src="img/Esteria.jpg" alt="">
     <img class="img-fluid" src="img/Esteria.jpg" alt="">
     <p>Each character was modeled and animated in Blender.</p>
 </div>
 
              
-                     
+      <br><br><br>            
 
     </div>
         </div>
