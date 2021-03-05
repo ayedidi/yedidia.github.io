@@ -17,16 +17,19 @@
 .glass{
     background: white;
     min-height: 80vh;
-    width: 80%;
-    background: linear-gradient(to right bottom, rgba(255,255,255,0.8), rgba(255,255,255,0.4));
+    width: 90%;
+    background: linear-gradient(to right bottom, rgba(255,255,255,1), rgba(255,255,255,0.6));
     border-radius: 30px;
     z-index: 0;
     margin: auto;
     display: flex;
-      flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
 }
 
 .dashboard{
+/*
     flex: 2;
     display: flex;
     flex-direction: column;
@@ -35,6 +38,7 @@
     text-align: center;
     background: linear-gradient(to right bottom, rgba(255,255,255,0.7), rgba(255,255,255,0.2));
     border-radius: 30px;
+*/
 }
 
 .projectButton{
