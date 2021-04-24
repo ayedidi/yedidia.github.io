@@ -689,6 +689,12 @@ video{
     z-index: -1;
 }
 
+.introVid img{
+    width: 100vw;
+    
+    
+}
+
 /*YEDIDIA--------------*/
 
 .yedidia{

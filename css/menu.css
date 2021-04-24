@@ -38,6 +38,7 @@ DEPENDENCES
   
   border-style: none;
   padding: 0;
+    
 }
 
 /* The component will reset browser's styles of link */
@@ -76,6 +77,7 @@ DEPENDENCES
   height: var(--hamburgerHeight, 20px);
 
   position: relative;
+    
 }
 
 .m-hamburger::before, 
@@ -153,7 +155,45 @@ MENU STYLES
   bottom: 0;
   left: 0;
   z-index: var(--menuZindex, 999);
+
+    
 }
+
+.slide-fwd-center {
+	-webkit-animation: slide-fwd-center 0.35s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s both;
+	        animation: slide-fwd-center 0.35s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s both;
+}
+
+
+@-webkit-keyframes slide-fwd-center {
+  0% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+  }
+  50% {
+    -webkit-transform: translateZ(160px);
+            transform: translateZ(160px);
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+  }
+}
+@keyframes slide-fwd-center {
+  0% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+  }
+  50% {
+    -webkit-transform: translateZ(160px);
+            transform: translateZ(160px);
+  }
+   100% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+  }
+}
+
 
 .menu__nav{
   box-sizing: border-box;
@@ -303,6 +343,7 @@ DEMO
 =====
 */
 
+/*
 body{
   display: flex;
   height: 100vh;
@@ -329,6 +370,7 @@ body{
   line-height: 1.45;
   margin-top: 1rem;
 }
+*/
 
 .menu__group{
   --rLinkTextColor: var(--colorWhite);
