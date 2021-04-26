@@ -67,7 +67,7 @@ body {
 }
 
 .galleryDisplay video{
-    height: 50vh;
+    height: 40vh;
     width: auto;
 }
 
@@ -76,7 +76,7 @@ body {
 }
 
 .imgDown{
-    margin-top: 30vh;
+    margin-top: 20vh;
 }
 
 /*ARROWS*/
