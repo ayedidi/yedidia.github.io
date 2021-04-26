@@ -10,8 +10,16 @@ body {
   font-family: 'Poppins';
   overflow: hidden;
 }
+
+.welcome{
+    margin: 45vh;
+    align-content: center;
+    justify-content: center;
+}
+
 .blink {
   animation: blinker 1.2s linear infinite;
+    
 }
 
 @keyframes blinker {
@@ -24,7 +32,11 @@ body {
 .slide {
     width: 95vw;
     height: 100vh;
+    
+    background-image: url(img/repeat.png);
+    background-repeat: no-repeat;
 }
+
 
 .wrapper {
     display: flex;
@@ -35,15 +47,15 @@ body {
 }
 
 .one {
-    background: linear-gradient(to left, #B1DECA, #B1DECA 50%, #DEF4E2 75%, #DEF4E2 75%);
+/*    background: linear-gradient(to left, #B1DECA, #B1DECA 50%, #DEF4E2 75%, #DEF4E2 75%);*/
 }
 
 .two {
-    background-color: #B1DECA;
+  
 }
 
 .three {
-    background: linear-gradient(to right, #B1DECA, #B1DECA 50%, #DEF4E2 75%, #DEF4E2 75%);
+    
 }
 
 .four {
@@ -54,22 +66,22 @@ body {
     color: #fff;
 }
 
+.galleryDisplay video{
+    height: 400px;
+    width: auto;
+}
 
+.imgUp{
+    margin-top: 15vh;
+}
+
+.imgDown{
+    margin-top: 30vh;
+}
 
 /*ARROWS*/
 
-/*
-.wrapper .game{
-    height: 100vh;
-}
 
-.game video{
-    margin: 0;
-    height: 100vh;
-    top: 0;
-    object-fit: cover;
-}
-*/
 
 /*
 section{
