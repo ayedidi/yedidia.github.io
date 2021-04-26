@@ -44,8 +44,8 @@ $(document).ready(function() {
 //});
 
 $(document).ready(function(){
-    $(".parfait").show();
-    $(".coolOff").hide();
+    $(".parfait").hide();
+    $(".coolOff").show();
     $(".3dart").hide();
     $(".faceFilter").hide();
     $(".projectCards").show();
