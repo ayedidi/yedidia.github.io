@@ -766,13 +766,23 @@ video{
 }
 
 
-/*TIMELINE*/
+/*VIMEO EMBED*/
 
-#journey{
-    background-image: linear-gradient(to right, #6d6875 , #b5838d);
-    color: white;
-/*    background-size: cover;*/
-    
+.containVimeo{
+    padding:1rem;
+    position:relative;
+    align-content: center;
+    justify-content: center;
+    width:100%;
+    height:100%;
+}
+
+.videoVimeo{
+/*     position:absolute;*/
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
 }
 
 
